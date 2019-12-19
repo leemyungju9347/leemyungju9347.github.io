@@ -11,30 +11,42 @@
 	<script>
 		$(document).ready( function() {
 			var slideBox = document.querySelectorAll('.slide_box');
-
-			var 옵션 = {
+			//var txtBox = document.querySelectorAll('.text');
+			
+			
+			var option = {
 				pager:true,
+				pause:5000,
 				pagerShortSeparator: ' / ',
 				pagerType:'short',
 				effect:'slide',
 				infiniteLoop:true,
 				auto:true,
 				autoHover:true,
-				
+				onSliderLoad: function () {
+					sizing(this.getCurrentSlide());
+					fadeIn(this.getCurrentSlide());
+				},
+				onSlideAfter: function () {
+					sizing(this.getCurrentSlide());
+					fadeIn(this.getCurrentSlide());
+				}	
 			}
-			
-			$('.main_slide').bxSlider({
-				onSlideAfter:function(){
-					var num = this.getCurrentSlide();
-					
-					var progress = (num + 1) * 20
-					$('.progress_bar > span').css( 'width', progress + '%' )
-					
+
+			$('.main_slide').bxSlider(option);
+
+			function sizing(num) {
+				var progress = (num + 1) * 20;
+				$('.progress_bar > span').css('width', progress + '%');
+			}
+
+			function fadeIn(num) {				
+				for (let i = 0; i < slideBox.length; i++) {
+					slideBox[num].classList.remove('on');
 				}
-			});
-
-			
-
+				slideBox[num].classList.add('on');
+					
+			}
 		});
 	</script>
 </head>

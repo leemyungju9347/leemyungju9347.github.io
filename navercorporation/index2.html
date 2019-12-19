@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+<head>
+	<meta charset="utf-8">
+	<title>NAVER Corporation</title>
+	<link rel="stylesheet" media="all" href="css/common.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<style></style>
+	<script>
+		$(document).ready( function() {
+			var slideBox = document.querySelectorAll('.slide_box');
+
+			var 옵션 = {
+				pager:true,
+				pagerShortSeparator: ' / ',
+				pagerType:'short',
+				effect:'slide',
+				infiniteLoop:true,
+				auto:true,
+				autoHover:true,
+				
+			}
+			
+			$('.main_slide').bxSlider({
+				onSlideAfter:function(){
+					var num = this.getCurrentSlide();
+					
+					var progress = (num + 1) * 20
+					$('.progress_bar > span').css( 'width', progress + '%' )
+					
+				}
+			});
+
+			
+
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+	<!--  헤더 시작  -->
+	<header class="">
+		<div class="header_inner">
+			<h1 class="naver_logo">
+				<a href="">naver</a>
+			</h1>
+			<!-- 백그라운드로 적용 -->
+			<nav>
+				<ul class="nav_container">
+					<li>
+						<a href="" class="nav_title">네이버</a>
+						<div class="sub">
+							<ul class="gnb_menu">
+								<li class="gnb_menu_list">
+									<ul>
+										<li class="depth">
+											<a href=""><strong>NAVER</strong></a>
+										</li>
+										<li>
+											<a href=""><span>네이버소개</span></a>
+										</li>
+										<li>
+											<a href=""><span>주요연혁</span></a>
+										</li>
+										<li>
+											<a href=""><span>수상내역</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_menu_list">	
+									<ul>
+										<li>
+											<a href=""><strong>주요관계사</strong></a>
+										</li>
+									</ul>
+								</li>
+								<li class="gnb_menu_list">
+									<ul>
+										<li class="depth">
+											<a href=""><strong>제휴제안</strong></a>
+										</li>
+										<li><a href=""><span>제휴제안 안내</span></a></li>
+										<li><a href=""><span>제휴제안 등록</span></a></li>
+										<li><a href=""><span>검토현황 조회</span></a></li>
+									</ul>
+								</li>
+								<li class="gnb_menu_list">
+									<ul>
+										<li>
+											<a href=""><strong>CONTACT</strong></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+				
+				<li>
+					<a href="" class="nav_title">서비스</a>
+					<div class="sub">
+						<ul class="gnb_menu">
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href="">
+											<strong>FEATURED</strong><br>
+											<strong>SERVICES</strong>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href="">
+											<strong>FOR</strong><br>
+											<strong>BUSINESS</strong>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href="">
+											<strong>FOR</strong><br>
+											<strong>CREATORS</strong>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href="">
+											<strong>FOR</strong><br>
+											<strong>DEVELOPERS</strong>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href="" class="gnb_allservice">
+											<strong>ALL</strong><br>
+											<strong>SERVICE</strong>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="" class="nav_title">가치실현</a>
+					<div class="sub">
+						<ul class="gnb_menu">
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href="">
+											<strong>프로젝트 꽃</strong>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="depth">
+										<a href=""><strong>기업윤리</strong></a>
+									</li>
+									<li><a href=""><span>기업윤리규범</span></a></li>
+									<li><a href=""><span>기업윤리 상담센터</span></a></li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="depth">
+										<a href="">
+											<strong>프라이버시 센터</strong>
+										</a>
+									</li>
+									<li><a href=""><span>네이버 리포트</span></a></li>
+									<li><a href=""><span>개인정보보호</span></a></li>
+									<li><a href=""><span>정보보호인증</span></a></li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="classify">
+										<a href=""><strong>동반성장</strong></a>
+									</li>
+									<li class="classify">
+									<a href=""><strong>환경</strong></a>
+									</li>
+									<li><a href="">데이터센터 각</a></li>
+									<li><a href="">네이버 사옥</a></li>
+								</ul>
+							</li>
+						
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="depth">
+										<a href="">
+											<strong>With Naver</strong>
+										</a>
+									</li>
+									<li><a href=""><span>재단법인 해피빈</span></a></li>
+									<li><a href=""><span>네이버 문화재단</span></a></li>
+									<li><a href=""><span>커넥트 재단</span></a></li>
+									<li><a href=""><span>접근성</span></a></li>
+									<li><a href=""><span>네이버 라이브러리</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>	
+				<li>
+					<a href="" class="nav_title">홍보</a>
+					<div class="sub">
+						<ul class="gnb_menu">
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+									<a href=""><strong>보도자료</strong></a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href=""><strong>TV광고</strong></a>
+									</li>
+								</ul>
+							</li>						
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href=""><strong>미디어 행사</strong></a>
+									</li>
+								</ul>	
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li>
+										<a href=""><strong>커뮤니케이션 채널</strong></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>	
+				</li>
+				
+				<li>
+					<a href="" class="nav_title">투자정보</a>
+					<div class="sub">
+						<ul class="gnb_menu">
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="depth">
+										<a href=""><strong>기업지배구조</strong></a>
+									</li>
+									<li><a href=""><span>주주구성</span></a></li>
+									<li><a href=""><span>이사회</span></a></li>
+									<li><a href=""><span>정관</span></a></li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="classify">
+										<a href=""><strong>공시정보</strong></a>
+									</li>
+									<li class="classify">
+										<a href=""><strong>주가정보</strong></a>
+									</li>
+									<li class="classify">
+										<a href=""><strong>제무제표</strong></a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="depth"><a href=""><strong>IR일정</strong></a></li>
+									<li><a href=""><span>IR행사</span></a></li>
+									<li><a href=""><span>IR MEETING</span></a></li>
+									<li><a href=""><span>주주총회</span></a></li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="depth"><a href=""><strong>IR자료실</strong></a></li>
+									<li><a href=""><span>실적발표</span></a></li>
+									<li><a href=""><span>감사보고서</span></a></li>
+									<li><a href=""><span>사업보고서</span></a></li>
+									<li><a href=""><span>연차보고서</span></a></li>
+									<li><a href=""><span>FAQ</span></a></li>
+								</ul>
+							</li>
+							<li class="gnb_menu_list">
+								<ul>
+									<li class="classify"><a href=""><strong>결산공고</strong></a></li>
+									<li class="classify"><a href=""><strong>공고</strong></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="gnb_recruit">
+					<a href="" class="nav_title recruit">채용</a>
+				</li>
+			</ul>
+			</nav>
+
+			<div class="util">
+				<div class="lang">
+					<a href="" class="lang_kor"><span>KOR</span></a>
+					<a href="" class="lang_eng"><span>ENG</span></a>
+				</div>
+				<div class="btn_box">
+					<a href="" class="total">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--  사이트맵  -->
+		<div class="sitemap">
+			<ul class="sitemap_container">
+				<li>
+					<strong class="title">네이버</strong>
+					<ul>
+						<li><a href=""><strong><span>NAVER</span></strong></a></li>
+						<li><a href=""><span>네이버 소개</span></a></li>
+						<li><a href=""><span>주요연혁</span></a></li>
+						<li><a href=""><span>수상내역</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>주요관계사</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>제휴제안</span></strong></a></li>
+						<li><a href=""><span>제휴제안 안내</span></a></li>
+						<li><a href=""><span>제휴제안 등록</span></a></li>
+						<li><a href=""><span>검토현황 조회</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>Contact</span></strong></a></li>
+					</ul>
+				</li>
+				<li>
+					<strong class="title">서비스</strong>
+					<ul>
+						<li><a href=""><strong><span>FEATURED SERVICES</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>FOR BUSINESS</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>FOR CREATORS</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>FOR DEVELOPERS</span></strong></a></li>
+					</ul>
+					<ul>
+						<li class="allservice">
+							<a href=""><strong><span>ALL SERVICE</span></strong></a>
+						</li>
+					</ul>
+				</li>
+	
+				<li>
+					<strong class="title">가치실현</strong>
+					<ul>
+						<li><a href=""><strong><span>프로젝트 꽃</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>기업윤리</span></strong></a></li>
+						<li><a href=""><span>기업윤리규범</span></a></li>
+						<li><a href=""><span>기업윤리 상담센터</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>프라이버시 센터</span></strong></a></li>
+						<li><a href=""><span>네이버 리포트</span></a></li>
+						<li><a href=""><span>개인정보보호</span></a></li>
+						<li><a href=""><span>정보보호인증</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>동반성장</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>환경</span></strong></a></li>
+						<li><a href=""><span>데이터센터 각</span></a></li>
+						<li><a href=""><span>네이버 사옥</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>With Naver</span></strong></a></li>
+						<li><a href=""><span>재단법인 해피빈</span></a></li>
+						<li><a href=""><span>네이버 문화재단</span></a></li>
+						<li><a href=""><span>커넥트 재단</span></a></li>
+						<li><a href=""><span>접근성</span></a></li>
+						<li><a href=""><span>네이버 라이브러리</span></a></li>
+					</ul>
+				</li>
+	
+				<li>
+					<strong class="title">홍보</strong>
+					<ul>
+						<li><a href=""><strong><span>보도자료</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>TV광고</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>미디어행사</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>커뮤니케이션 채널</span></strong></a></li>
+					</ul>
+				</li>
+			
+				<li>
+					<strong class="title">투자정보</strong>
+					<ul>
+						<li><a href=""><strong><span>기업지배구조</span></strong></a></li>
+						<li><a href=""><span>주주구성</span></a></li>
+						<li><a href=""><span>이사회</span></a></li>
+						<li><a href=""><span>정관</span></a></li>
+					</ul>
+					<ul>
+	
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>공시정보</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>주가정보</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>재무정보</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>IR일정</span></strong></a></li>
+						<li><a href=""><span>IR 행사</span></a></li>
+						<li><a href=""><span>IR MEETING</span></a></li>
+						<li><a href=""><span>주주총회</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>IR자료실</span></strong></a></li>
+						<li><a href=""><span>실적발표</span></a></li>
+						<li><a href=""><span>감사보고서</span></a></li>
+						<li><a href=""><span>사업보고서</span></a></li>
+						<li><a href=""><span>연차보고서</span></a></li>
+						<li><a href=""><span>FAQ</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>결산공고</span></strong></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><strong><span>공고</span></strong></a></li>
+					</ul>
+				</li>
+				<li>
+					<strong class="title">채용</strong>
+					<ul class="recruit">
+						<li>
+							<a href=""><strong><span>채용정보</span></strong></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="sitemap_bg"></div>
+		<!--  사이트맵  끝 -->
+	</header>
+	<!--  헤더 끝  -->
+
+		<!--  본문 시작  -->
+		<main>
+			<!--  슬라이드 시작  -->
+			<div class="slidewrap">
+				<div class="main_slide">
+					<a href="" class="slide_box">
+						<h2 class="cloud">NAVER CLOUD PLATFORM</h2>
+						<div class="text cloud">	
+							<strong>네이버 클라우드 데이터센터 건립을 위한
+								<br>부지 제안 요청 안내</strong>
+							<p>
+								<span>일정</span>후보부지(10개) 발표 및 
+								협의가 진행 중 입니다.
+							</p>	
+						</div>
+						<img src="images/img_main_slide5.jpg" alt="슬라이드 이미지" >
+					</a>
+					<a href="" class="slide_box">
+						<h2 class="smartlens">SmartLens</h2>
+						<div class="text smartlens">
+							<strong>삶의 가치를 높이는<br>기술을 연구합니다.</strong>
+							<p>당신이 더 가치있는 일에 몰입할 수 있도록 <br>
+								삶을 더 깊이 이해하는 기술을 만들어갑니다.
+							</p>
+						</div>
+						<img src="images/img_main_slide1.jpg" alt="슬라이드 이미지">
+					</a>
+					<a href="" class="slide_box">
+						<h2 class="projectflower">프로젝트 꽃</h2>
+						<div class="text projectflower">
+							<strong>무한한 가능성과의<br>만남을 기대합니다.</strong>
+							<p>다양한 스몰비지니스와 크리에이터의 가치가 발견되고<br>
+								그 이름을 꽃 피울 수 있도록 네이버가 함께 합니다.
+							</p>
+						</div>
+						<img src="images/img_main_slide2.jpg" alt="슬라이드 이미지">
+					</a>
+					<a href="" class="slide_box">
+						<h2 class="spacegreen">SPACE GREEN</h2>
+						<div class="text placegreen">
+							<strong>더 넓은 세상에서 <br>더 큰 미래를 생각합니다.</strong>
+							<p>전 세계 이용자들을 만나 새로운 경험과 가치를 전하고,<br>
+								글로벌과 호흡하는 기술을 통해, 한 단계 진화한 연결을 만들어 갑니다.
+							</p>
+						</div>
+						<img src="images/img_main_slide3.jpg" alt="슬라이드 이미지">
+					</a>
+					<a href="" class="slide_box">
+						<h2 class="labs">LABS</h2>
+						<div class="text labs">
+							<strong>생활환경지능 기술로<br> 새로운 연결과 발견의 가능성을 만듭니다</strong>
+							<p>네이버랩스는 사용자의 환경과 상황을 인지하고 이해하여<br>
+								필요한 정보와 서비스를 알아서 자연스럽게 연결하는 기술을 연구합니다.
+							</p>
+						</div>
+						<img src="images/img_main_slide4.jpg" alt="슬라이드 이미지">
+					</a>
+				</div>
+				<div class="progress_bar"><span></span></div>
+				<!-- <a href="" class="arrow prev">이전</a>
+				<a href="" class="arrow next">다음</a> -->
+			</div>
+				<!-- <div class="slide_page">
+					<span class="current">1</span>
+					<span class="total">5</span>
+				</div> -->
+				
+
+			<!--  슬라이드 끝  -->
+
+			<div class="contents">
+				<div class="main_info">
+					<div class="item">
+						<h3>NEWS</h3>
+						<div class="item_box news">
+							<a href="">
+								<strong><span>네이버 '프로젝트 꽃", 청년</span></strong>
+								<p>네이버 '프로젝트 꽃', 청년 혁신<br>
+								가를 웹툰으로 소개하는 마케팅가를 웹툰으로 소개하는 마케팅가를 웹툰으로 소개하는 마케팅가를 웹툰으로 소개하는 마케팅가를 웹툰으로 소개하는 마케팅가를 웹툰으로 소개하는 마케팅가를 웹툰으로 소개하는 마케팅마케팅가를 웹툰으로 소개하는 마케팅마케팅가를 웹툰으로 소개하는 마케팅마케팅가를 웹툰으로 소개하는 마케팅</p>
+							</a>
+						</div>				
+						<a href="" class="link">바로가기<span></span></a>
+					</div>
+					<div class="item">
+						<h3>CAREER</h3>
+						<div class="item_box career">
+							<strong>수 많은 사용자의 목소리에서 <br>내 일의 자부심과 무게를 느낍니다.</strong>
+						</div>						
+						<a href="" class="link">네이버에서 일한다는 것<span></span></a>
+					</div>
+					<div class="item">
+						<h3>STOCK</h3>
+						<div class="item_box stock">
+							<div class="price_box">
+								<strong class="price">156,000
+									<span class="unit">원</span>
+								</strong>
+								<span class="figure">2,000</span>
+							</div>
+							<span class="date">KRX 2019.09.27</span>	
+						</div>	
+						<a href="" class="link">주가정보<span></span></a>
+					</div>
+					<div class="item finance">
+						<h3>결산공고</h3>
+						<div class="item_box finance">
+							<strong>네이버 상세 재무상태표를 확인할 수 있습니다.</strong>
+						</div>
+						<a href="" class="link">결산공고 보러가기<span></span></a>
+					</div>
+				</div>
+				<div class="main_service">
+					<ul class="service_box">
+						<li>
+							<a href="" class="thumbnail">
+								<img src="images/img_main_content12.png" alt="">
+								<div class="thumbnail" >
+									<div class="thumbnail_text">
+										<strong>두 번째 네이버 데이터 센터 <br>부지 제안 요청 안내</strong>
+										<span>제안서 검토를 진행중입니다.</span>
+									</div>	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/img_main_content10.png" alt="">
+								<div class="thumbnail">
+									<div class="thumbnail_text">
+										<strong>5G 브레인리스 로봇 기술</strong>
+										<span>로봇의 두뇌를 클라우드로</span>
+									</div>									
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/img_main_content11.png" alt="">
+								<div class="thumbnail">
+									<div class="thumbnail_text">
+										<strong>On-road intelligence</strong>
+										<span>도로 위 자율주행을 위한 통합 솔루션</span>
+									</div>									
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/img_main_content3.png" alt="">
+								<div class="thumbnail" >
+									<div class="thumbnail_text">
+										<strong>클로바 스페셜 에디션</strong>
+										<span>음악 추천부터 네이버 검색까지</span>
+									</div>									
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/img_main_content4.png" alt="">
+								<div class="thumbnail" >
+									<div class="thumbnail_text">
+										<strong>네이버 웨일</strong>
+										<span>바꾸지 않았으면 몰랐을 경험</span>
+									</div>									
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/img_main_content5.png" alt="">
+								<div class="thumbnail">
+									<div class="thumbnail_text">
+										<strong>데이터센터 각</strong>
+										<span>데이터를 통해 현재를 기록하는 곳</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/img_main_content6.png" alt="">
+								<div class="thumbnail">
+									<div class="thumbnail_text">
+										<strong>그린팩토리</strong>
+										<span>네이버의 공간이야기</span>	
+									</div>									
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/img_main_content7.png" alt="">
+								<div class="thumbnail">
+									<div class="thumbnail_text">
+										<strong>네이버 웹툰</strong>
+										<span>매일매일 새로운 재미</span>
+									</div>									
+								</div>
+							</a>
+						</li>
+						<li >
+							<a href="">
+								<img src="images/img_main_content8.png" alt="">
+								<div class="thumbnail">
+									<div class="thumbnail_text">
+										<strong>프로젝트 꽃</strong>
+										<span>가치의 발견과 성장</span>
+									</div>									
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="platform">
+					<div class="platform_title">
+						<h3>기술로 다양성을 꽃피우는 플랫폼</h3>
+						<p>개인의 다양한 가능성이 의미있는 성공으로 꽃 피울 수 있도록<br>
+							네이버가 서비스와 기술플랫폼을 통해 더 가까이 서포트(SUPPORT)합니다.
+						</p>
+					</div>
+					<ul class="platform_support">
+						<li>
+							<a href="" class="creators">
+								<strong><span>Creators With Naver</span></strong>
+								<p>다양한 분야의 창작자들이 그들의 이름을
+								빛낼 수 있도록 네이버가 함께 합니다.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="" class="business">
+								<strong><span>Business With Naver</span></strong>
+								<p>파트너들의 성곡적인 창업과
+								지속가능한 사업을 위해 노력합니다.
+								</p>
+							</a>
+							
+						</li>
+						<li>
+							<a href="" class="developers">
+								<strong><span>Developers With Naver</span></strong>
+								<p>개발자와 개발사들의 지식과 경험을
+								공유하며 함께 성장해 나갑니다.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="" class="projectflowers">
+								<strong><span>프로젝트 꽃</span></strong>
+								<p>다양한 스몰비즈니스와 <br> 크리에이터들이 꽃 피울 수 있도록 <br>
+								네이버가 함께 합니다.
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!--  본문 끝  -->
+
+		<!-- footer 시작 -->
+		<footer>
+			<div class="inner">
+				<strong class="footer_logo">
+					<img src="images/footer_logo.png" alt="naver">
+				</strong>
+				<ul class="footer_menu">
+					<li>
+						<a href="">제휴제안</a>
+					</li>
+					<li>
+						<a href="">기업윤리 상담센터</a>
+					</li>
+					<li>
+						<a href="">개인정보 처리방침</a>
+					</li>
+				</ul>
+				<div class="affiliate_menu">
+					<a href="" class="btn_affiliate">
+						자회사 바로가기
+					</a>
+					<ul class="affiliate_list">
+						<li>
+							<a href=""><span>LINE</span></a>
+						</li>
+						<li>
+							<a href=""><span>NAVER Labs</span></a>
+						</li>
+						<li>
+							<a href=""><span>NBP</span></a>
+						</li>
+						<li>
+							<a href=""><span>SNOW</span></a>
+						</li>
+						<li>
+							<a href=""><span>Webtoon</span></a>
+						</li>
+						<li>
+							<a href=""><span>Works Mobile</span></a>
+						</li>
+					</ul>
+				</div>
+				<p class="footer_copy">
+					<img src="images/footer_copy.png" alt="navercorp.all rights reserved">
+				</p>
+			</div>
+		</footer>
+		<!-- footer 끝 -->
+	</div>
+	<script>
+		//마우스엔터
+		// enterNav(document.querySelector('.nav_container'));
+
+		// function enterNav(obj) {
+		// 	var liEls = obj.children;
+			
+		// 	for(var i = 0; i < liEls.length; i++){
+		// 		if(liEls[i].querySelector('.sub')){
+		// 			liEls[i].addEventListener('mouseenter', enterWork);
+		// 			liEls[i].addEventListener('mouseleave', leaveWork);
+		// 		}
+				
+		// 	}
+		// 	function enterWork(e) {
+		// 		this.querySelector('.sub').classList.add('on');
+				
+		// 	}
+
+		// 	function leaveWork(e) {
+		// 		this.querySelector('.sub').classList.remove('on');
+
+		// 	}
+		// }
+
+		//마우스오버
+		enterNav();
+		function enterNav() {
+			var navConta = document.querySelector('.nav_container');
+			navConta.addEventListener('mouseover',overWork);
+			navConta.addEventListener('mouseout',outWork);
+
+			var 열렸던메뉴;
+
+			function overWork(ev) {
+				if( ev.target.tagName !== 'A' ) return;
+
+				var subMenu = ev.target.parentNode.querySelector('.sub');
+				if( subMenu ){
+					subMenu.classList.add('on');
+					열렸던메뉴 = subMenu;
+				}
+			}
+
+			function outWork(ev) {
+				if( !열렸던메뉴 || !ev.relatedTarget ) return;
+
+				if( !도착확인(열렸던메뉴,ev.relatedTarget) ){
+					열렸던메뉴.classList.remove('on');
+				}
+
+				function 도착확인(열렸던메뉴,도착한곳) {
+					while( 도착한곳.tagName !== 'HTML' ){
+						if( 열렸던메뉴 === 도착한곳 ){
+						return true;
+					}
+						도착한곳 = 도착한곳.parentNode;
+					}
+					return false
+				}
+			}
+			
+		}
+
+		//스크롤
+		window.addEventListener('scroll',scrollWork);
+		
+		
+		function scrollWork() {
+			var htmlEl = document.querySelector('html');
+			var headEl = htmlEl.querySelector('header');
+			var htmlScrTop = htmlEl.scrollTop;
+
+			if(htmlScrTop > 150 ){
+				headEl.classList.add('on');
+			}
+			if ( htmlScrTop < 120 ){
+				headEl.classList.remove('on');
+				
+			}
+
+		}
+
+		//사이트맵
+
+		// clickSiteMap();
+		// function clickSiteMap() {
+		// 	var headerEl = document.querySelector('header');
+		// 	var btnBox = headerEl.querySelector('.btn_box');
+		// 	var siteMap = document.querySelector('.sitemap');
+
+		// 	btnBox.addEventListener('click',clickWork);
+		
+		// 	function clickWork(ev) {
+		// 		ev.preventDefault();
+					
+		// 		if( ev.target.tagName !== 'A' && ev.target.tagName !== 'SPAN' ) return;
+
+		// 		if ( headerEl.classList.contains('active') ) {
+		// 			siteMap.classList.remove('open');
+		// 			headerEl.classList.remove('active');
+
+		// 		} else {
+		// 			siteMap.classList.add('open');
+		// 			headerEl.classList.add('active');
+		// 		}
+		// 	}
+
+		// }
+
+
+	//메뉴박스
+
+
+	enterBox();
+
+	function enterBox() {
+		var btn = document.querySelector('.affiliate_menu');
+		var listBox = btn.querySelector('ul');
+		
+		btn.addEventListener('click',listOpen);
+		window.addEventListener('click', close);
+		
+
+		function listOpen(ev) {
+			ev.preventDefault();
+			listBox.classList.add('on');
+		
+		}
+			
+		function close(ev) {
+			if (ev.target.tagName === 'A') return;
+			
+			if( !확인하기(ev.target,listBox) ){
+				listBox.classList.remove('on');
+				//window.removeEventListener('click', close);
+			}
+
+		}
+
+		function 확인하기(클릭태그,listBox) {	
+			while( 클릭태그.tagName !== 'HTML' ){
+				if( 클릭태그.tagName === listBox.tagName ){
+					return true;
+				}
+
+				클릭태그 = 클릭태그.parentNode;
+			}
+			return false
+		}
+	}
+
+	//사이트맵
+	clickSiteMap();
+	function clickSiteMap() {
+		var header = document.querySelector('header');
+		var btn_box = header.querySelector('.btn_box');
+		
+		btn_box.addEventListener('click', clickWork);
+
+		function clickWork(ev) {
+			ev.preventDefault();
+			
+			if( ev.target.tagName !== 'SPAN' && ev.target.tagName !== 'A' ) return;
+			
+			if( header.classList.contains('active') ){
+				header.classList.remove('active');
+			}else{
+				header.classList.add('active');
+			}
+			
+		}
+	}
+	</script>
+</body>
+</html>
