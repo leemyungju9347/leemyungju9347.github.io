@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://127.0.0.1:5500/vue.js/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8.html -->
+<html><script src="chrome-extension://jfkjbfhcfaoldhgbnkekkoheganchiea/scripts/injected.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./Document_files/vue.js.다운로드"></script>
+    <style>
+        #app > div{padding:20px;border: 1px solid red;}
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+    
+    <div id="app"><select name="" id=""><option value="A">One</option><option value="B">Two</option><option value="C">Three</option></select><br><br> <span> 체크한 이름 : A </span></div>
+    
+<script>
+    //트리거 - 버튼을 눌렀을때만 실행되도록 한다.
+    var instances = new Vue({
+        el: '#app',
+        data:{
+            age:15,
+            list:['a','b','c'],
+            number:'',  
+            text:'',
+            // 상태:false,
+            // 상태:[],
+            // 상태:'',
+            상태:[
+                    { text: 'One', value: 'A' },
+                    { text: 'Two', value: 'B' },
+                    { text: 'Three', value: 'C' }
+                ],
+            선택된거:''
+        },
+        computed:{
+            goAndCom(){
+                if( this.상태 ){
+                    return '가';
+
+                }else{
+                   return '와라';
+                }
+            },
+            메뉴상태(){
+                if( this.상태 ){
+                    return 'on';
+
+                }else{
+                   return 'off';
+                }
+            }
+        },
+        methods: {
+            clickWork(a,e){
+                // console.log();
+                this.text = e.target.textContent;
+                // this.number = i
+                // this.age += 1;
+
+            }
+
+        },
+        created(){
+            
+        }
+
+    });
+
+
+</script>
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script></body></html>
