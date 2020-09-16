@@ -199,6 +199,22 @@ header > nav > .gnb-menu > li.on > a > .gnb-icon {
     height:80px
 }
 
+*::-webkit-scrollbar {
+	width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	width: auto;
+    background-color: #3d3d3d;
+}
+*::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
 
 
 /* ------------ main -------------- */
@@ -467,22 +483,35 @@ main > .section-wrap > .about > .inner > .skills {
 }
 main > .section-wrap > .about > .inner > .skills > .sub-title {
     /* color:#000 */
+    /* border:1px solid red; */
+    display: inline-block;
+    position: relative;
 }
 main > .section-wrap > .about > .inner > .skills > .sub-title > b {
-    position: relative;
+    
     margin-left: 5px;
     /* color:#38dc24; */
     /* color: #000; */
 }
 
-main > .section-wrap > .about > .inner > .skills > .sub-title > b::after{
+main > .section-wrap > .about > .inner > .skills > .sub-title > .typing-icon {
+    display: none;
+}
+
+main > .section-wrap > .about > .inner > .skills > .sub-title > .typing-icon.on {
+    display: inline-block;
+}
+
+
+
+main > .section-wrap > .about > .inner > .skills > .sub-title::after{
     content: '';
     width: 10px;
-    height:24px;
+    height:25px;
     position: absolute;
     background-color:#23ff18;
-    right:-12px;
-    top:2px;
+    right:-13px;
+    top:7px;
     animation: cursor 1s infinite
     /* animation-duration: .8s; 
     animation-iteration-count: infinite;  */
@@ -500,12 +529,22 @@ main > .section-wrap > .about > .inner > .skills > .sub-title > b::after{
 
 main > .section-wrap > .about > .inner > .skills > .skills-list {
     margin-top: 30px;
-    display: none;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+main > .section-wrap > .about > .inner > .skills > .skills-list.active {
+    opacity: 1;
 }
 
 main > .section-wrap > .about > .inner > .skills > .skills-list > li {
     font-family: 'Cafe24Ohsquare';
     font-size: 2.3em;
+    display: none;
+}
+
+main > .section-wrap > .about > .inner > .skills > .skills-list.active > li {
+    display: block;
 }
 
 main > .section-wrap > .about > .inner > .skills > .skills-list > li + li {
