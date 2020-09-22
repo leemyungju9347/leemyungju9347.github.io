@@ -5,6 +5,11 @@ const sectionWrap = body.querySelector('main > .section-wrap')
 const typing = body.querySelector('section.about .typing');
 const typingIcon = body.querySelector('.sub-title > .typing-icon');
 const skillList = body.querySelector('.skills-list');
+const contactBtn = body.querySelector('header > nav > .gnb-menu > .contact');
+const contactElm = body.querySelector('main > .section-wrap > .contact');
+const closeBtn = body.querySelectorAll('main > .section-wrap > .contact > .circles > .circle')
+
+console.log(closeBtn);
 
 let timer; // 셋타임아웃 컨트롤 할 수 있는 전역변수
 
@@ -32,7 +37,7 @@ function typingEffect(){
 }
 
 // click 이벤트
-for(let i = 0; i < gnbList.length; i++){
+for(let i = 0; i < gnbList.length - 1; i++){
     gnbList[i].addEventListener('click', (ev)=>{
         ev.preventDefault();
 
@@ -55,7 +60,20 @@ for(let i = 0; i < gnbList.length; i++){
         }
     })
 
-    
+}
+
+contactBtn.addEventListener('click',(ev)=>{
+    ev.preventDefault();
+    console.log(ev);
+    contactElm.classList.add('active');
+})
+
+for(let i = 0; i < closeBtn.length; i++) {
+    closeBtn[i].addEventListener('click',ev=>{
+        ev.preventDefault();
+        console.log(ev);
+        contactElm.classList.remove('active');
+    })
 }
 
 
