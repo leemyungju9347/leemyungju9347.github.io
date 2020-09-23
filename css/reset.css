@@ -21,8 +21,11 @@
 }
 
 html {
-    font-size:100%
+    font-size:100%;
+    /* cursor: url(../images/emoji.png), auto; */
+    
 }
+
 body {
 	font-size:12px;
 	line-height:1.6;
