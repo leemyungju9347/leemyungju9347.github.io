@@ -28,14 +28,15 @@ let widthIdx = 0;
 // 페이지 로드시 로딩바 호출
 window.onload = ()=>{
     console.log('로드됨');
-    loadingArea.classList.add('active');
+    // loadingArea.classList.add('active');
 
     loadingBarEvent();
     
  
     setTimeout(()=>{
-        loadingArea.classList.remove('active');
-    },4000)
+        loadingArea.style.display = 'none'
+    },4000);
+
 }
 
 function loadingBarEvent() {
