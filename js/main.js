@@ -11,8 +11,10 @@ const closeBtn = body.querySelectorAll('main > .section-wrap > .contact > .circl
 const loadingArea = body.querySelector('.loading-area');
 const loadingBar = loadingArea.querySelector('.loading-area .loading-bar');
 const loadingMsg = loadingArea.querySelector('.loading-area .loading-msg');
+const mobileGnb = body.querySelectorAll('.mobile-header > .m-gnb-menu > ul > li');
+const mobileContact = body.querySelector('.mobile-header > .m-gnb-menu > ul > .contact')
 
-console.log(loadingMsg);
+console.log(mobileContact);
 
 
 let timer; // 셋타임아웃 컨트롤 할 수 있는 전역변수
@@ -76,7 +78,7 @@ function typingEffect(){
    
 }
 
-// click 이벤트
+// PC header click 이벤트
 for(let i = 0; i < gnbList.length - 1; i++){
     gnbList[i].addEventListener('click', (ev)=>{
         ev.preventDefault();
@@ -102,7 +104,35 @@ for(let i = 0; i < gnbList.length - 1; i++){
 
 }
 
-// gnb 메뉴 contact 버튼
+// mobile header click 이벤트
+
+for(let i = 0; i < mobileGnb.length - 1; i++){
+    mobileGnb[i].addEventListener('click',ev=>{
+        ev.preventDefault();
+
+        // 전체 classList, active 지우기
+        for(let j = 0; j < sectionElms.length; j++){
+            sectionElms[j].classList.remove('active');
+            gnbList[j].classList.remove('on');
+            body.classList.remove('black');
+        }
+
+        // 클릭시 해당 인덱스 active
+        sectionElms[i].classList.add('active');
+        gnbList[i].classList.add('on');
+
+        // 위치가 about이면
+        if( sectionElms[i].classList.contains('about') ) {   
+            body.classList.add('black'); 
+            setTimeout(typingEffect,500); //타이핑효과 호출
+          
+        }
+
+
+    })
+}
+
+// PC - gnb 메뉴 contact 버튼
 contactBtn.addEventListener('click',(ev)=>{
     ev.preventDefault();
     contactElm.classList.add('active');
@@ -115,4 +145,10 @@ for(let i = 0; i < closeBtn.length; i++) {
     })
 }
 
+
+// mobile - gnb 메뉴 contact 버튼
+mobileContact.addEventListener('click', ev=>{
+    ev.preventDefault();
+    contactElm.classList.add('active');
+})
 

@@ -86,7 +86,10 @@
     height: 100%;
     min-height: calc(600px - 4%);
     max-width: 1350px;
+    min-width: 400px;
     margin: 0 auto;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
     /* margin: 0 auto;
     max-width: 1380px; */
 }
@@ -154,6 +157,10 @@ header > nav > .gnb-menu > li.contact:hover > a > .gnb-icon {
 header > nav > .gnb-menu > li:hover > a > .gnb-icon,
 header > nav > .gnb-menu > li.on > a > .gnb-icon {
     background-image: url(../images/icons-opened-folder-sky.png);
+}
+
+.mobile-header {
+    display: none;
 }
 
 /* ------------ contact -------------- */
@@ -253,6 +260,7 @@ main {
     width:90%;
     float: left;
     height: 100%;
+    /* border: 1px solid lime; */
 }
 
 main > .section-wrap {
@@ -272,6 +280,7 @@ main > .section-wrap > section {
     overflow: hidden;
     border-radius: 15px;
     position: relative;
+    box-shadow: 14px 12px 10px 5px #0000007a;
     display: none;
 }
 
@@ -305,8 +314,8 @@ main > .section-wrap > .intro {
 }
 
 main > .section-wrap > .intro > .inner {
-    background: linear-gradient(to right,#fff 50%, #ffeb33 50%);
     background: linear-gradient(#fff 50%, #ffeb33 50%);
+    min-height: 580px;
 }
 
 main > .section-wrap > .intro > .inner > .main-logo-box {
@@ -314,32 +323,43 @@ main > .section-wrap > .intro > .inner > .main-logo-box {
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    /* border: 10px solid #ffeb33; */
     border: 10px solid #000098;
-    padding: 30px;
+    padding:1.5% 3%;
     border-radius:10px;
     background-color: #ffeb33;
-    box-shadow: 8px 8px 8px 8px #a0a0a06b;
     box-shadow: 8px 8px 8px 8px #61616140;
     background-color: #fff;
-    /* transform: translateY(-50%);
-    left: 10%; */
+    width: 50%;
+    min-width: 500px;
+    max-width: 500px;
 }
 
 main > .section-wrap > .intro > .inner > .main-logo-box > h1 {
-    font-size: 10em;
-    letter-spacing: 3px;
-    color: #000098;
     text-shadow: 5px 5px 5px #8c8c8c;
+    text-align: center;
 }
 
+main > .section-wrap > .intro > .inner > .main-logo-box > h1 > span {
+    font-size: 10em;
+    color: #000098;
+}
+
+main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .folio {
+    letter-spacing:7px;
+}
+
+main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .rt {
+    margin-left: -10px;
+} 
+
 main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .logo-icon {
-    background: url(../images/emoji.png) no-repeat 50% 50%;
+    background: url(../images/emoji.png) no-repeat 0 0;
     width: 170px;
     height: 170px;
-    background-size: 100%;
+    background-size:contain;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align:top;
+    margin-left: -10px;
 }
 
 main > .section-wrap > .intro > .inner > .main-logo-box > .logo-txt {
@@ -353,17 +373,12 @@ main > .section-wrap > .intro > .inner > .main-logo-box > strong {
     right: 0;
 }
 
-
 main > .section-wrap > .intro > .inner > .main-logo-box > p {
     transform: rotateZ(270deg);
     left: -166px;
-    top: 110px;
+    bottom: 117px;
 }
 
-main > .section-wrap > .intro > .inner > .main-logo-box > span {
-    bottom:-60px;
-    left:0
-}
 
 
 /* ------------ about -------------- */
@@ -695,6 +710,7 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     background-size: 50px 50px; 
     background: #ffeb33;*/
     font-family: 'DungGeunMo';
+    font-weight: bold;
     margin-left: 10px;
 }
 
@@ -1102,5 +1118,266 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     100% { color: #fff; }
 }
 
+/*
+    1. pc : 1024px ~
+    2. 테블릿 가로, 테블릿 세로 : 768px ~ 1023px
+    3. 모바일 가로, 모바일 세로 : ~ 768px
+*/
+
+/* ------------ 태블릿 ------------*/
+@media screen and (max-width:1023px) {
+    body {
+        /* background-color: palevioletred !important; */
+    }
+
+    /*---------header-----------*/
+    header {
+        position: fixed;
+        bottom: 15px;
+        z-index: 1000;
+        height: auto;
+        text-align: center;
+        background: #3939396b;
+        border-radius: 20px;
+        width:50%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 0;
+        float: none;
+    }
+
+    header > nav > .gnb-menu > li {
+        display: inline-block;
+    }
+
+    header > nav > .gnb-menu > li > a > .gnb-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    header > nav > .gnb-menu > li.contact > a > .gnb-icon {
+        margin-bottom: 5px;
+    }
+
+    header > nav > .gnb-menu > li + li {
+        margin-top:0;
+        margin-left:15px;
+    }
+
+    body.black header > nav > .gnb-menu > li > a > span {
+        color:#fff
+    }
+
+    main {
+        width: 100%;
+        float: none;
+    }
+    .section-wrap {
+        /* border: 1px solid red; */
+    }
+
+    /*--------- intro -----------*/
+    main > .section-wrap > .intro > .inner {
+        /* min-width: 380px; */
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box {
+        padding: 4% 2%;
+        min-width: 400px;
+        max-width: 420px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > span {
+        font-size: 7.5em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .logo-icon {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .rt {
+        margin-left: -5px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .folio {
+        letter-spacing: 4px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > .logo-txt {
+        font-size: 1.5em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > strong {
+        top:-38px
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > p {
+        left: -125px;
+        bottom: 90px;
+    }
 
 
+
+    /*--------- about -----------*/
+    .typing-title {
+        display: none;
+    }
+
+    /*--------- loading -----------*/
+    .loading-area {
+        z-index: 1000;
+    }
+
+    .loading-area > .loading-wrap {
+        width: 50%;
+        height: 60px;
+    }
+    
+    .loading-area > .loading-wrap > p {
+        top: -41px;
+        font-size: 1.5em;
+    }
+
+    .loading-area > .loading-wrap > span {
+        top: 50%;
+        font-size: 1.5em;
+        transform: translateY(-50%);
+    }
+
+}
+
+/* ------------ 모바일 ------------*/
+@media screen and (max-width:768px) {
+    body {
+        /* background-color: peachpuff !important; */
+        padding: 1.5% 2%;
+    }
+
+    /*--------- header -----------*/
+    header { 
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        height:5%;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .mobile-header  > .m-gnb-menu {
+        text-align: right;
+    }
+    .mobile-header  > .m-gnb-menu > ul {}
+    .mobile-header  > .m-gnb-menu > ul > li {
+        display: inline-block;
+    }
+    .mobile-header  > .m-gnb-menu > ul > li + li {
+        margin-left: 10px;
+    }
+    .mobile-header  > .m-gnb-menu > ul > li > a {
+        font-size: 1.5em;
+        color: #fff;
+        letter-spacing: 1.2px;
+    }
+
+    body.black .mobile-header > .m-gnb-menu > ul > li > a {
+        color: #3B3B3B;
+    }
+
+    main {
+        height: 95%;
+    }
+
+
+    main > .section-wrap > section > h3 {
+        font-size: 1.5em;
+        top: 12px;
+    }
+    
+
+
+    /*--------- intro -----------*/
+    main > .section-wrap > .about > .inner {
+        padding: 30px 20px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills { 
+        margin-top: 0;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .sub-title {
+        font-size: 1.5em;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .sub-title::after {
+        right: -12px;
+        top: 4px;
+        width: 8px;
+        height: 17px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list {
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li {
+        font-size: 1.6em;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.jquery {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more { 
+        margin-top: 15px;
+        font-size: 0.8em;
+        width: 100%;
+        padding: 20px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li > span > i {
+        margin-right: 5px;
+        font-size: 0.8em;
+    }
+
+    main > .section-wrap > .about > .inner::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    /*--------- loading -----------*/
+    .loading-area {
+        
+    }
+
+    .loading-area > .loading-wrap {
+        width: 60%;
+        height: 45px;
+    }
+    
+    .loading-area > .loading-wrap > p {
+        font-size: 0.9em;
+        top: -30px;
+        left: 5px;
+
+    }
+
+    .loading-area > .loading-wrap > span {
+        font-size: 1.15em;
+    }
+
+}
