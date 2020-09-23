@@ -9,8 +9,10 @@ const contactBtn = body.querySelector('header > nav > .gnb-menu > .contact');
 const contactElm = body.querySelector('main > .section-wrap > .contact');
 const closeBtn = body.querySelectorAll('main > .section-wrap > .contact > .circles > .circle');
 const loadingArea = body.querySelector('.loading-area');
-const loadingBar = loadingArea.querySelector('.loading-area .loading-bar')
-console.log(loadingBar.clientWidth);
+const loadingBar = loadingArea.querySelector('.loading-area .loading-bar');
+const loadingMsg = loadingArea.querySelector('.loading-area .loading-msg');
+
+console.log(loadingMsg);
 
 
 let timer; // 셋타임아웃 컨트롤 할 수 있는 전역변수
@@ -23,13 +25,14 @@ let index = 0;
 
 // 100%가 되면 깜빡깜빡 이벤트 => css 효과 주고 class명
 
-let widthIdx = 0;
+let fill = 0;
 
 // 페이지 로드시 로딩바 호출
 window.onload = ()=>{
     console.log('로드됨');
     // loadingArea.classList.add('active');
 
+    loadingMsg.classList.add('txt-ani')
     loadingBarEvent();
     
  
@@ -40,12 +43,11 @@ window.onload = ()=>{
 }
 
 function loadingBarEvent() {
-    if( widthIdx < 80 ) {
-        loadingBar.style.width = `${40 + widthIdx}%`;
+    if( fill < 80 ) {
+        loadingBar.style.width = `${40 + fill}%`;
 
-        widthIdx += 20;
-        console.log(widthIdx);
-        loadingTimer = setTimeout(loadingBarEvent,800);
+        fill += 20;
+        loadingTimer = setTimeout(loadingBarEvent,700);
     } else {
         clearTimeout(loadingTimer);
     }
