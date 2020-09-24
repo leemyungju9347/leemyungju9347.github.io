@@ -22,6 +22,7 @@
 
 html {
     font-size:100%;
+    overflow: hidden;
     /* cursor: url(../images/emoji.png), auto; */
     
 }

@@ -88,7 +88,8 @@
     max-width: 1350px;
     /* min-width: 400px; */
     /* min-width: 380px; */
-    min-width: 313px;
+    /* min-width: 313px; */
+    min-width: 310px;
     margin: 0 auto;
     /* border: 1px solid red; */
     /* overflow: hidden; */
@@ -977,6 +978,7 @@ body.black main > .section-wrap > .contact > .inner {
 .section-wrap > .contact > .inner > .contact-list {
 
 }
+
 .section-wrap > .contact > .inner > .contact-list > p {
     font-size: 3em;
     color: #fff;
@@ -990,19 +992,17 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > p {
 }
 
 .section-wrap > .contact > .inner > .contact-list > ul {
-    /* border: 1px solid lime; */
     margin-top: 20px;
+    padding-left: 10px;
 }
 .section-wrap > .contact > .inner > .contact-list > ul > li {
-    /* border: 1px solid lime; */
-    /* display: inline-block; */
 }
 .section-wrap > .contact > .inner > .contact-list > ul > li + li {
     margin-top: 10px;
 }
 .section-wrap > .contact > .inner > .contact-list > ul > li > a {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.8em;
     letter-spacing: 2px;
     font-family: 'DungGeunMo';
 }
@@ -1245,6 +1245,10 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     }
 
     /* ---------- contact ----------- */
+    .section-wrap > .contact { 
+        min-width: 500px; 
+        height: 355px;
+    }
     .section-wrap > .contact > .inner > .contact-list > p {
         font-size: 2.3em;
     }
@@ -1252,14 +1256,21 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
         font-size: 2em;
     }
 
+
 }
 
 /* ------------ 모바일 ------------*/
 @media screen and (max-width:768px) {
     body {
         /* background-color: peachpuff !important; */
-        padding: 1.15% !important;;
+        padding: 1.15% !important;
     }
+
+    .wrap {
+        min-height: calc(570px - 2.3%);
+    }
+
+
 
     /*--------- header -----------*/
     header { 
@@ -1270,7 +1281,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
         display: block;
         height:5%;
         width: 100%;
-        padding: 0 10px;
+        padding:5px 10px 0;
     }
 
     .mobile-header  > .m-gnb-menu {
@@ -1286,9 +1297,8 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
         margin-left: 5px;
     }
     .mobile-header  > .m-gnb-menu > ul > li > a {
-        font-size: 1.15em;
+        font-size: 1.2em;
         color: #fff;
-        letter-spacing: 1.2px;
     }
 
     body.black .mobile-header > .m-gnb-menu > ul > li > a {
@@ -1299,12 +1309,30 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
         height: 95%;
     }
 
+    main > .section-wrap > section {
+        padding-top: 45px;
+    }
 
     main > .section-wrap > section > h3 {
-        font-size: 1.4em;
-        top: 12px;
+        font-size: 1.3em;
+        top: 11px;
+    }
+
+    .circles {
+        top: 15px;
+        left: 19px;
+    }
+
+    .circles > .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .circles > .circle + .circle {
+        margin-left: 6px;
     }
     
+
 
 
     /*--------- intro -----------*/
@@ -1328,7 +1356,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     }
 
     main > .section-wrap > .intro > .inner > .main-logo-box > strong {
-        top: -26px;
+        top:-31px
     }
 
     main > .section-wrap > .intro > .inner > .main-logo-box > p {
@@ -1406,7 +1434,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     }
     
     .loading-area > .loading-wrap > p {
-        font-size: 0.8em;
+        font-size: 0.9em;
         top: -30px;
         left: 5px;
 
@@ -1421,7 +1449,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     /*--------- contact -----------*/
 
     .section-wrap > .contact {       
-        min-width: 325px;
+        min-width: 340px;
         height: 260px;
         padding-top: 40px;
     }
@@ -1432,7 +1460,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     }
 
     .section-wrap > .contact > .inner {
-        /* padding: 10px; */
+        padding: 10px;
     } 
 
     .section-wrap > .contact > .inner > .contact-list > p {
@@ -1445,7 +1473,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     }
 
     .section-wrap > .contact > .inner > .contact-list > ul > li > a {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .section-wrap > .contact > .circles > .circle > i {
@@ -1456,12 +1484,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
         top: 11px;
         left: 20px;
     }
-
-    
-    .section-wrap > .contact > .circles > .circle {
-        width: 15px;
-        height: 15px;
-    } 
+ 
 
     .section-wrap > .contact > .circles > .circle + .circle {
         margin-left: 5px;
