@@ -86,7 +86,9 @@
     height: 100%;
     min-height: calc(600px - 4%);
     max-width: 1350px;
-    min-width: 400px;
+    /* min-width: 400px; */
+    /* min-width: 380px; */
+    min-width: 313px;
     margin: 0 auto;
     /* border: 1px solid red; */
     /* overflow: hidden; */
@@ -538,16 +540,11 @@ main > .section-wrap > .about > .inner > .skills {
     margin-top: 20px;
 }
 main > .section-wrap > .about > .inner > .skills > .sub-title {
-    /* color:#000 */
-    /* border:1px solid red; */
     display: inline-block;
     position: relative;
 }
 main > .section-wrap > .about > .inner > .skills > .sub-title > b {
-    
     margin-left: 5px;
-    /* color:#38dc24; */
-    /* color: #000; */
 }
 
 main > .section-wrap > .about > .inner > .skills > .sub-title > .typing-icon {
@@ -569,8 +566,6 @@ main > .section-wrap > .about > .inner > .skills > .sub-title::after{
     right:-13px;
     top:7px;
     animation: cursor 1s infinite
-    /* animation-duration: .8s; 
-    animation-iteration-count: infinite;  */
 }
 
 
@@ -665,8 +660,8 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     color:#30A5AC;
 }
 main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li > p {
-    font-size: 0.8em;
-    margin-top:10px
+    font-size: 0.7em;
+    margin-top: 15px;
 }
 
 
@@ -764,7 +759,7 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     box-shadow: 9px 19px 10px 10px #c7c7c7a3;
 }
 .portfolio > .inner > .portfolio-contents > .portfolio-list.right > .img-area {
-    box-shadow: rgba(199, 199, 199, 0.64) -20px 13px 10px 10px;
+    /* box-shadow: rgba(199, 199, 199, 0.64) -20px 13px 10px 10px; */
     /* min-width:500px; */
 }
 
@@ -859,7 +854,7 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
 
 .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .light-headline > li {
     display: inline-block;
-    border:3px solid #bababa;
+    border:2px solid #bababa;
     border-radius: 30px;
     padding:5px 10px;
 }
@@ -944,6 +939,7 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     box-shadow: none;
     -webkit-animation: up .5s ease-out both;
     animation: up .5s ease-out both;
+    min-width: 600px;
 }
 
 @-webkit-keyframes up {
@@ -999,7 +995,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > p {
 }
 .section-wrap > .contact > .inner > .contact-list > ul > li {
     /* border: 1px solid lime; */
-    display: inline-block;
+    /* display: inline-block; */
 }
 .section-wrap > .contact > .inner > .contact-list > ul > li + li {
     margin-top: 10px;
@@ -1024,7 +1020,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li > 
     color: #3B3B3B;
     
 }
-.section-wrap > .contact > .inner > .contact-list > ul > li:hover > a > span {
+.section-wrap > .contact > .inner > .contact-list > ul > li > a:hover > span {
     background-color: #fff;
     color: #3B3B3B;
     font-weight: bold;
@@ -1076,7 +1072,7 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     left: 50%;
     transform: translate(-50%,-50%);
     /* width:500px; */
-    width: 40%;
+    width: 50%;
     height: 70px;
     border: 5px solid #fff;
     padding: 5px;
@@ -1248,13 +1244,21 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
         transform: translateY(-50%);
     }
 
+    /* ---------- contact ----------- */
+    .section-wrap > .contact > .inner > .contact-list > p {
+        font-size: 2.3em;
+    }
+    .section-wrap > .contact > .inner > .contact-list > ul > li > a {
+        font-size: 2em;
+    }
+
 }
 
 /* ------------ 모바일 ------------*/
 @media screen and (max-width:768px) {
     body {
         /* background-color: peachpuff !important; */
-        padding: 1.5% 2%;
+        padding: 1.15% !important;;
     }
 
     /*--------- header -----------*/
@@ -1266,21 +1270,23 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
         display: block;
         height:5%;
         width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .mobile-header  > .m-gnb-menu {
         text-align: right;
     }
+
     .mobile-header  > .m-gnb-menu > ul {}
+
     .mobile-header  > .m-gnb-menu > ul > li {
         display: inline-block;
     }
     .mobile-header  > .m-gnb-menu > ul > li + li {
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .mobile-header  > .m-gnb-menu > ul > li > a {
-        font-size: 1.5em;
+        font-size: 1.15em;
         color: #fff;
         letter-spacing: 1.2px;
     }
@@ -1295,13 +1301,43 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
 
 
     main > .section-wrap > section > h3 {
-        font-size: 1.5em;
+        font-size: 1.4em;
         top: 12px;
     }
     
 
 
     /*--------- intro -----------*/
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .logo-icon {
+        width: 80px;
+        height: 80px;
+        margin-top: 0;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box {
+        min-width: 260px;
+        padding: 4% 0;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > span {
+        font-size: 5em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > .logo-txt {
+        font-size: 0.8em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > strong {
+        top: -26px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > p {
+        bottom: -36px;
+        left: 0;
+        transform: none;
+    }
+
+    /*--------- about -----------*/
     main > .section-wrap > .about > .inner {
         padding: 30px 20px;
     }
@@ -1365,12 +1401,12 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     }
 
     .loading-area > .loading-wrap {
-        width: 60%;
+        width: 70%;
         height: 45px;
     }
     
     .loading-area > .loading-wrap > p {
-        font-size: 0.9em;
+        font-size: 0.8em;
         top: -30px;
         left: 5px;
 
@@ -1378,6 +1414,57 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
 
     .loading-area > .loading-wrap > span {
         font-size: 1.15em;
+        left: 12px;
+    }
+
+
+    /*--------- contact -----------*/
+
+    .section-wrap > .contact {       
+        min-width: 325px;
+        height: 260px;
+        padding-top: 40px;
+    }
+
+    .section-wrap > .contact > h3 {
+        font-size: 1.3em;
+        top: 8px;
+    }
+
+    .section-wrap > .contact > .inner {
+        /* padding: 10px; */
+    } 
+
+    .section-wrap > .contact > .inner > .contact-list > p {
+        font-size: 1.6em;
+    }
+
+    .section-wrap > .contact > .inner > .contact-list > ul {
+        margin-top: 15px;
+        padding-left: 5px;
+    }
+
+    .section-wrap > .contact > .inner > .contact-list > ul > li > a {
+        font-size: 1.5em;
+    }
+
+    .section-wrap > .contact > .circles > .circle > i {
+        font-size: 0.5em;
+    }
+
+    .section-wrap > .contact > .circles {
+        top: 11px;
+        left: 20px;
+    }
+
+    
+    .section-wrap > .contact > .circles > .circle {
+        width: 15px;
+        height: 15px;
+    } 
+
+    .section-wrap > .contact > .circles > .circle + .circle {
+        margin-left: 5px;
     }
 
 }
