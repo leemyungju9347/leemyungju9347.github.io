@@ -30,19 +30,19 @@ let index = 0;
 let fill = 0;
 
 // 페이지 로드시 로딩바 호출
-window.onload = ()=>{
-    console.log('로드됨');
-    // loadingArea.classList.add('active');
+// window.onload = ()=>{
+//     console.log('로드됨');
+//     // loadingArea.classList.add('active');
 
-    loadingMsg.classList.add('txt-ani')
-    loadingBarEvent();
+//     loadingMsg.classList.add('txt-ani')
+//     loadingBarEvent();
     
  
-    setTimeout(()=>{
-        loadingArea.style.display = 'none'
-    },4000);
+//     setTimeout(()=>{
+//         loadingArea.style.display = 'none'
+//     },4000);
 
-}
+// }
 
 function loadingBarEvent() {
     if( fill < 80 ) {
