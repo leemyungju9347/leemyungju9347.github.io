@@ -1,0 +1,96 @@
+/* tablet */
+@media all and (min-width:768px) and (max-width:1023px) { 
+    body {
+        /* background-color: blueviolet; */
+    }
+    .wrap {
+        padding: 50px 30px 30px;
+    }
+}
+
+/* mobile */
+@media all and (max-width:768px) { 
+    body {
+        /* background-color: lightcoral; */
+        padding: 0;
+    }
+
+    .wrap {padding: 0;}
+
+    .greetings-area > .greetings-form {
+        padding: 30px 30px 40px;
+        height: unset;
+    }
+
+    .greetings-area > .greetings-form > h4 {
+        font-size: 1.2em;
+    }
+
+    .greetings-area > .greetings-form > input {
+        font-size: 1.15em;
+        margin-top: 25px;
+    }
+
+    .greetings-area > .greetings-form > button {
+        font-size: 1.5em;
+        right: 41px;
+        top: 81px;
+    }
+
+    .todolist-area {
+        width:90%;
+        min-width:350px;
+        margin: 50px auto 0;
+    }
+
+    .todolist-area::after {
+        left: 46px;
+        width: 4px;
+
+    }
+
+    .todolist-area > h1 {
+        font-size:2.5em;
+    }
+    
+
+    .todolist-area > .sub-title {
+        font-size: 1.2em;
+    }
+
+    .todolist-area > .todo-form {
+        width: 60%;
+    }
+
+    .todolist-area > .todo-form > .add-btn {
+        font-size: 1.2em;
+    }
+
+    .todolist-area > .todo-form > .todo-input {
+        font-size: 1.15em;
+    }
+
+    .todolist-area > .todolist-content > ul {
+        padding-left: 65px;
+    }
+
+    .todolist-area > .todolist-content > ul > li { 
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+
+    .todolist-area > .todolist-content > ul > li > span::before {
+        top: 6px;
+    }
+
+    .todolist-area > .todolist-content > ul > li > .checkbox[type="checkbox"] + label > span > i {
+        top: -1px;
+    }
+
+    .circles {
+        display: none;
+    }
+
+
+
+}
