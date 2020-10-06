@@ -1,0 +1,352 @@
+/*----------common------------*/
+.text-fade {
+    -webkit-animation: txtAni .5s ease-out both;
+    animation: txtAni .5s ease-out both;
+}
+
+@-webkit-keyframes txtAni {
+    0%{
+        /* transform:translateY(50px); */
+        opacity: 0;
+      }
+      100%{
+          /* transform: translateY(0); */
+          opacity: 1;
+      }
+}
+
+.wrap {
+    height: 100%;
+    padding: 30px;
+}
+
+.greetings-area {
+    /* background-color: cornflowerblue;*/
+    background-color: #00000069;
+    position: fixed;;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.greetings-area > .greetings-form {
+    background-color: #2d2d2d;
+    width:450px;
+    height: 250px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    -webkit-animation: pageUp .5s ease-out both;
+    animation: pageUp .7s ease-out both;
+}
+
+
+@-webkit-keyframes pageUp {
+    0%{
+        top: 0;
+      }
+      100%{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+}
+
+.greetings-area > .greetings-form > h4 {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.greetings-area > .greetings-form > input {
+    -webkit-text-fill-color: #fff !important;
+    font-size: 2em;
+    border-bottom: 2px solid #fff;
+    padding: 5px 10px;
+    margin-top: 50px;
+}
+
+.greetings-area > .greetings-form > button {
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    right: 63px;
+    top: 117px;
+
+}
+
+.todolist-area {
+    border:5px solid #000;
+    width: 50%;
+    margin:50px auto 0;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    /* box-shadow: 5px 9px 11px 6px #8080804f; */
+    box-shadow: 8px 7px 13px 6px #74747447;
+    border-radius: 5px;
+    min-width: 700px;
+    text-align: center;
+}
+
+.todolist-area::after {
+    content: '';
+    background-color: #dd2f0d;
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    top: 0;
+    left:75px;
+    bottom: 0;
+}
+
+.todolist-area > h1 {
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Recipekorea'; 
+    padding-top: 20px;
+}
+
+.todolist-area > .sub-title {
+    font-size:2em;
+    margin-top: 10px;
+    letter-spacing:1.2px;
+    display: inline-block;
+}
+
+.todolist-area > .sub-title > .username {
+    color: #268277;
+    padding: 5px 3px 0;
+}
+
+.todolist-area > .sub-title > .username > br {
+    display: none;
+}
+
+.todolist-area > .sub-title > .username:hover {
+    /* border-bottom: 2px solid #000; */
+    cursor: text;
+    text-decoration: underline;
+    text-underline-position: under
+}
+
+.todolist-area > .sub-title > .username:focus-within {
+    background-color: #d5d5d5;
+    text-decoration: underline;
+    text-underline-position: under
+    /* border-bottom: 2px solid #000; */
+}
+
+.todolist-area > .date {
+    position: absolute;
+    font-size: 1.2em;
+    right: 16px;
+    top: 283px;
+}
+
+.todolist-area > .todo-form {
+    width:50%;
+    margin:40px auto 0;
+    position: relative;
+}
+
+.todolist-area > .todo-form > .todo-input {
+    border-bottom: 2px solid #1e4ba0;
+    width: 100%;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+
+.todolist-area > .todo-form > .add-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+
+}
+
+.todolist-area > .todolist-content {
+    width: 100%;
+    margin-top:70px;
+    text-align: left;
+    position: relative;
+    background: repeating-linear-gradient(#1e4ba0, #1e4ba0 5px, #fff 0, #fff 55px);
+}
+
+.todolist-area > .todolist-content > ul {
+    padding-left:100px;
+}
+
+.todolist-area > .todolist-content > ul:after {
+    /* content: '';
+    width: 100%;
+    height: 100px;
+    display: block; */
+}
+
+.todolist-area > .todolist-content > .empty-box {
+    /* height: 240px; */
+    height:350px;
+}
+
+.todolist-area > .todolist-content > .empty-box > p {
+    position: absolute;
+    font-size: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 128px;
+    /* width: 100%; */
+    text-align: center;
+    color: #bcbcbc;
+    /* background-color: #ffffff; */
+}
+
+.todolist-area > .todolist-content > ul > li {
+    font-size:1.5em;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.list-ani {
+    -webkit-animation: listOn .5s ease-out both;
+    animation: listOn .5s ease-out both;
+}
+
+@-webkit-keyframes listOn {
+    0%{
+        transform:translateX(50px);
+        opacity: 0;
+      }
+
+      100%{
+          transform: translateX(0);
+          opacity: 1;
+      }
+}
+
+.todolist-area > .todolist-content > ul > li + li {
+    /* margin-top: 10px; */
+}
+
+.todolist-area > .todolist-content > ul > li > .checkbox {
+    display: none;
+}
+
+.todolist-area > .todolist-content > ul > li > .checkbox[type="checkbox"] + label {
+    margin-right: 5px;
+}
+
+.todolist-area > .todolist-content > ul > li > .checkbox[type="checkbox"] + label > span {
+    border: 2px dotted #1e4ba0;
+    display: inline-block;
+    width:15px;
+    height:15px;
+    border-radius:3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.todolist-area > .todolist-content > ul > li > .checkbox[type="checkbox"] + label > span > i {
+    font-size: 0.9em;
+    position: absolute;
+    top: -4px;
+    color: transparent;
+}
+
+.todolist-area > .todolist-content > ul > li.checked > .checkbox[type="checkbox"] + label > span > i {
+    color: #000;
+}
+
+.todolist-area > .todolist-content > ul > li > .checkbox[type="checkbox"]:checked + label {
+
+}
+
+.todolist-area > .todolist-content > ul > li > span {
+    margin-left:10px;
+    position: relative;
+}
+
+.todolist-area > .todolist-content > ul > li.checked > span {
+    color: #a6a6a6;
+}
+
+.todolist-area > .todolist-content > ul > li > span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: 4px;
+    width: 100%;
+    background-color: #dd2f0d;
+    display: none;
+}
+
+.todolist-area > .todolist-content > ul > li.checked > span::before {
+    display: block;
+}
+
+.todolist-area > .todolist-content > ul > li > .btn-box {
+    position: absolute;
+    right:30px;
+    top: 18px;
+}
+
+.todolist-area > .todolist-content > ul > li > .btn-box > button {
+    font-size: 1em;
+}
+
+.todolist-area > .todolist-content > ul > li > .btn-box > .edit-btn > i {
+    color: #248574;
+}
+.todolist-area > .todolist-content > ul> li > .btn-box > .delete-btn {
+    margin-left: 15px;
+}
+
+
+.todolist-area > .todolist-content > ul > li > .btn-box > .delete-btn > i {
+    color: #dd2f0d;
+}
+
+.todolist-area > .todolist-content > .clear-btn {
+    font-family: 'Recipekorea'; 
+    position: absolute;
+    color: #818181;
+    top: -25px;
+    left: 94px;
+    display: none;
+}
+
+
+.circles {
+    position: absolute;
+    top:0;
+    left: 14px;
+}
+
+.circles > .circle {
+    background-color: #fff6e4;
+    /* background-color: #248574; */
+    background-color: #FFE149;
+    width:30px;
+    height: 30px;
+    display: block;
+    border-radius: 50px;
+    /* border: 5px solid #000; */
+    box-shadow: inset 4px 3px 3px 0px #676767e0;
+}
+
+.circles > .circle + .circle {
+    margin-top:120px;
+}
