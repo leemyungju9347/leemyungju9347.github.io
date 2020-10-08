@@ -726,8 +726,7 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
 }
 
 .portfolio > .inner > .portfolio-contents > .hackernews > .img-area > .site-link > img {
-    left: 0;
-    transform: none;
+    width: 100%;
 }
 
 .portfolio > .inner > .portfolio-contents > .left > .txt-area {
