@@ -716,6 +716,11 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     min-height: 320px;
 }
 
+.portfolio > .inner > .portfolio-contents > .portfolio-list.weather > .img-area > .site-link > img {
+    height: auto;
+    width: 100%;
+}
+
 .portfolio > .inner > .website > .portfolio-list > .img-area > .site-link {
     /* overflow-y: scroll; */
 }
