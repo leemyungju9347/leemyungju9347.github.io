@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Ubuntu&display=swap');
+
+html {
+    font-size:100%;
+}
+
+body {
+	font-size:12px;
+	line-height:1.6;
+	margin:0;
+	padding:0;
+    word-break: keep-all;
+    /* background-color: #E4F2F6;
+    background-color: #DBE4FF;
+    background-color: #5D6A7D; */
+    background-color: #E6E9EF;
+    font-family: 'Goldman', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    /* background-color: #c9cfe1; */
+}
+
+body.on {
+    background-color: #c7cee6;
+}
+
+/* background-color: #c9cfe1; */
+
+h1, h2, h3, h4, h5, h6 {font-size:1em;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+
+em,i {font-style: normal;}
+ul, ol, li {list-style:none;}
+a:link, a:visited {
+    color: #3B3B3B;
+    text-decoration:none;
+}
+strong, span, p {color: #3B3B3B;}
+
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+	outline: none;
+    outline-offset:unset;
+}
+
+button,input {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}

@@ -1,0 +1,206 @@
+.wrap {
+  /* border: 1px solid black; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.calc-area {
+  background-color: #293345;
+  width: 400px;
+  margin: 50px auto 0;
+  padding: 30px 20px 40px;
+  border-radius: 20px;
+  box-shadow: 8px 12px 8px #a2a2a2;
+}
+
+body.on .calc-area {
+  background-color: #F1F3F6;
+  box-shadow: 8px 12px 8px #ccccccc7;
+  box-shadow: 8px 12px 13px #91919152;
+}
+
+
+.calc-area::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.calc-area > h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8em;
+}
+
+body.on .calc-area > h1 {
+  color:#0F162E
+}
+
+.calc-area button {
+  font-size: 2em;
+  padding: 15px 5px;
+  border-radius:30px;
+  border: transparent;
+  background-color: #293345;
+  color: #fff;
+  box-shadow: -7px -7px 20px 0 #363d4d, 7px 7px 20px 0 #141a25;
+  /* transition:all 0.5s ease; */
+}
+
+body.on .calc-area button {
+  background-color: #F1F3F6;
+  color: #0F162E;
+  box-shadow: -7px -7px 20px 0 #ffffff, 7px 7px 20px 0 #bebebe87;
+}
+
+.calc-area button:active, body.on .calc-area button:active{
+  box-shadow:unset;
+}
+
+.calc-area > .result {
+  width: 100%;
+  margin: 20px 0 30px;
+}
+
+.calc-area > .result > .result-num {
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding:15px 20px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+body.on .calc-area > .result > .result-num  {
+  color: #0F162E;
+}
+
+.calc-area > .result > .reset-btn {
+  width: 100%;
+  margin-top:15px;
+  padding:12px 5px;
+  font-size: 1.8em;
+}
+
+.calc-area > .number {
+  float: left;
+  width: 80%;
+}
+
+.calc-area > .number > .calc-row + .calc-row {
+  margin-top: 20px;
+}
+
+.calc-area > .number > .calc-row::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+
+.calc-area > .number > .calc-row > button {
+  width: calc(33.333333% - 20px);
+  float: left;
+  margin:0 10px;
+}
+
+.calc-area > .number > .calc-row > button:first-child {
+  margin-left: 0;
+  width: calc(33.333333% - 10px);
+}
+
+.calc-area > .number > .calc-row > .equals {
+  color: #FC9407;
+  width: calc(100% - 33.333333% - 20px);
+}
+
+
+.calc-area > .operator {
+  float:right;
+  width: calc(20% - 5px);
+  margin-left: 5px;
+}
+
+.calc-area > .operator >  button {
+  display: block;
+  width: 100%;
+  color: #FC9407;
+}
+
+body.on .calc-area > .operator >  button {
+  color: #FC9407;
+}
+
+
+.calc-area > .operator > button + button {
+  margin-top: 20px;
+}
+
+.setting-area {
+  position: absolute;
+  top: 20px;
+  left:50px;
+}
+
+.setting-area > input[type="checkbox"] {
+  display: none;
+}
+
+.setting-area > input[type="checkbox"] + label {
+  background-color: #293345;
+  width: 85px;
+  height: 40px;
+  display: block;
+  border-radius: 80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.setting-area > input[type="checkbox"]:checked + label {
+  background-color: #FC9407;
+}
+
+.setting-area > input[type="checkbox"] + label > .round {
+  display: block;
+  background-color: aliceblue;
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  transition:all 0.5s ease;
+  z-index: 1000;
+}
+
+.setting-area > input[type="checkbox"]:checked + label > .round {
+  left:50px;
+}
+
+.setting-area > input[type="checkbox"] + label > span {
+  font-size: 1.2em;
+  position: absolute;
+  top: 8px;
+  transition:all 0.5s ease;
+  color: #fff;
+}
+
+.setting-area > input[type="checkbox"] + label > .light {
+  left: 11px;
+  opacity: 0;
+}
+
+.setting-area > input[type="checkbox"] + label > .dark { 
+  right: 11px;
+  
+}
+
+.setting-area > input[type="checkbox"]:checked  + label > .light {
+  opacity: 1;
+}
+
+.setting-area > input[type="checkbox"]:checked + label > .dark {
+  opacity: 0;
+}
+

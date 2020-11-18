@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_calculator</title>
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 계산기 -->
+        <div class="calc-area">
+            <h1>calculator</h1>
+           <div class="result">
+                <input class="result-num" type="text" disabled>
+                <button class="reset-btn" data-type="ac">AC</button>
+            </div>
+            <div class="number">
+                <div class="calc-row">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                
+            </div>
+            <div class="calc-row">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+            </div>
+            <div class="calc-row">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </div>
+            <div class="calc-row">
+                <button class="zero">0</button>
+                <button class="equals" data-type="equals">=</button>
+            </div> 
+            </div>
+            <div class="operator">
+                <button data-type="operator">+</button>
+                <button data-type="operator">-</button>
+                <button data-type="operator">x</button>
+                <button data-type="operator">/</button>
+            </div>
+        </div>
+        <!-- 라이트/다크 모드 설정 -->
+        <div class="setting-area">
+            <input class="check-switch" type="checkbox" id="switch" name="switch">
+            <label for="switch" class="label-switch">
+                <span class="round"></span>
+                <span class="light">Light</span>
+                <span class="dark">Dark</span>
+            </label>
+        </div>
+        <!-- <i class="fas fa-moon"></i -->
+    </div>
+    
+    <script src="src/index.js"></script>
+</body>
+</html>

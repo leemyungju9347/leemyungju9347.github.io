@@ -14,7 +14,7 @@ const loadingMsg = loadingArea.querySelector('.loading-area .loading-msg');
 const mobileGnb = body.querySelectorAll('.mobile-header > .m-gnb-menu > ul > li');
 const mobileContact = body.querySelector('.mobile-header > .m-gnb-menu > ul > .contact')
 
-console.log(mobileContact);
+// console.log(mobileContact);
 
 
 let timer; // 셋타임아웃 컨트롤 할 수 있는 전역변수
@@ -30,30 +30,30 @@ let index = 0;
 let fill = 0;
 
 // 페이지 로드시 로딩바 호출
-window.onload = ()=>{
-    console.log('로드됨');
-    // loadingArea.classList.add('active');
+// window.onload = ()=>{
+//     console.log('로드됨');
+//     // loadingArea.classList.add('active');
 
-    loadingMsg.classList.add('txt-ani')
-    loadingBarEvent();
+//     loadingMsg.classList.add('txt-ani')
+//     loadingBarEvent();
     
  
-    setTimeout(()=>{
-        loadingArea.style.display = 'none'
-    },4000);
+//     setTimeout(()=>{
+//         loadingArea.style.display = 'none'
+//     },4000);
 
-}
+// }
 
-function loadingBarEvent() {
-    if( fill < 80 ) {
-        loadingBar.style.width = `${40 + fill}%`;
+// function loadingBarEvent() {
+//     if( fill < 80 ) {
+//         loadingBar.style.width = `${40 + fill}%`;
 
-        fill += 20;
-        loadingTimer = setTimeout(loadingBarEvent,700);
-    } else {
-        clearTimeout(loadingTimer);
-    }
-}
+//         fill += 20;
+//         loadingTimer = setTimeout(loadingBarEvent,700);
+//     } else {
+//         clearTimeout(loadingTimer);
+//     }
+// }
 
 
 
@@ -105,7 +105,6 @@ for(let i = 0; i < gnbList.length - 1; i++){
 }
 
 // mobile header click 이벤트
-
 for(let i = 0; i < mobileGnb.length - 1; i++){
     mobileGnb[i].addEventListener('click',ev=>{
         ev.preventDefault();
