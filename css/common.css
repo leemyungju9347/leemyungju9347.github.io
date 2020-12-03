@@ -139,8 +139,8 @@ body.black header > nav > .gnb-menu > li > a > span{
 
 header > nav > .gnb-menu > li > a > .gnb-icon {
     display: block;
-    width:70px;
-    height:70px;
+    width:60px;
+    height:60px;
     background: url(../images/icons-folder-sky.png) no-repeat 50% 50%;
     background-size: contain;
     margin: 0 auto;
