@@ -2,7 +2,7 @@
 `html`, `css`, `바닐라 자바스크립트`로 구현한 그동안 작업했던 포트폴리오 리스트와 front-end 관련 스킬, contact 정보가 담겨 있는 포트폴리오 사이트입니다. 
 
 ## 🌍 URL
-https://github.com/leemyungju9347
+https://leemyungju9347.github.io/
 
 ## 💻 contents
 - **Intro**
