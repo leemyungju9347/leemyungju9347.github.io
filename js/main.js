@@ -4,7 +4,7 @@ const sectionElms = body.querySelectorAll('main > .section-wrap > section');
 const sectionWrap = body.querySelector('main > .section-wrap');
 const subList = body.querySelector('.sub-list');
 const subElm = subList.querySelectorAll('li');
-const typing = body.querySelector('section.about .typing');
+const typing = body.querySelector('section.skills .typing');
 const typingIcon = body.querySelector('.sub-title > .typing-icon');
 const skillList = body.querySelector('.skills-list');
 const contactBtn = body.querySelector('header > nav > .gnb-menu > .contact');
@@ -30,30 +30,30 @@ let index = 0;
 let fill = 0;
 
 // 페이지 로드시 로딩바 호출
-// window.onload = ()=>{
-//     console.log('로드됨');
-//     // loadingArea.classList.add('active');
+window.onload = ()=>{
+    console.log('로드됨');
+    // loadingArea.classList.add('active');
 
-//     loadingMsg.classList.add('txt-ani')
-//     loadingBarEvent();
+    loadingMsg.classList.add('txt-ani')
+    loadingBarEvent();
     
  
-//     setTimeout(()=>{
-//         loadingArea.style.display = 'none'
-//     },4000);
+    setTimeout(()=>{
+        loadingArea.style.display = 'none'
+    },4000);
 
-// }
+}
 
-// function loadingBarEvent() {
-//     if( fill < 80 ) {
-//         loadingBar.style.width = `${40 + fill}%`;
+function loadingBarEvent() {
+    if( fill < 80 ) {
+        loadingBar.style.width = `${40 + fill}%`;
 
-//         fill += 20;
-//         loadingTimer = setTimeout(loadingBarEvent,700);
-//     } else {
-//         clearTimeout(loadingTimer);
-//     }
-// }
+        fill += 20;
+        loadingTimer = setTimeout(loadingBarEvent,700);
+    } else {
+        clearTimeout(loadingTimer);
+    }
+}
 
 
 
@@ -85,6 +85,7 @@ for(let i = 0; i < gnbList.length - 1; i++){
         ev.preventDefault();
 
         const liElm = ev.target.parentNode.parentNode;
+        let sectionInner = sectionElms[i].children[1];
 
         if( liElm.tagName !== 'LI' ) return
         
@@ -95,8 +96,8 @@ for(let i = 0; i < gnbList.length - 1; i++){
         
         
 
-        // 위치가 about이면
-        if( sectionElms[i].classList.contains('about') ) {   
+        // 위치가 skills이면
+        if( sectionElms[i].classList.contains('skills') ) {   
             body.classList.add('black'); 
             setTimeout(typingEffect,500); //타이핑효과 호출
         }
@@ -105,7 +106,6 @@ for(let i = 0; i < gnbList.length - 1; i++){
         // 위치가 portfolio면
         if( gnbList[i].classList.contains('portfolio') ) {
             let targetSection = sectionElms[i];
-            let sectionInner = sectionElms[i].children[1];
 
             subGnbRemove();
 
@@ -116,7 +116,6 @@ for(let i = 0; i < gnbList.length - 1; i++){
             // 클릭한 엘리먼트가 자바스크립트일 경우
             if( liElm.classList.contains('js') ) {
                 targetSection = sectionElms[i+1];
-                sectionInner = sectionElms[i+1].children[1]
                 targetSection.classList.add('active');
             
             // 클릭한 엘리먼트가 vue일 경우
@@ -126,10 +125,8 @@ for(let i = 0; i < gnbList.length - 1; i++){
                 targetSection.classList.add('active');
             }
 
-            sectionInner.scrollTop = '0';
             liElm.classList.add('on')
 
-            
 
         } else {
             // gnb
@@ -139,6 +136,7 @@ for(let i = 0; i < gnbList.length - 1; i++){
         }
 
         gnbList[i].classList.add('on');
+        sectionInner.scrollTop = '0';
 
 
     })
@@ -180,8 +178,8 @@ for(let i = 0; i < mobileGnb.length - 1; i++){
         sectionElms[i].classList.add('active');
         sectionInner.scrollTop = '0'; // 포폴부분은 스크롤이 많으니 항상 맨위에 위치
 
-        // 위치가 about이면
-        if( sectionElms[i].classList.contains('about') ) {   
+        // 위치가 skills이면
+        if( sectionElms[i].classList.contains('skills') ) {   
             body.classList.add('black'); 
             setTimeout(typingEffect,500); //타이핑효과 호출
           

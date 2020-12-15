@@ -176,7 +176,7 @@
     }
 
 
-    /*--------- about -----------*/
+    /*--------- skills -----------*/
     .typing-title {
         display: none;
     }
@@ -364,60 +364,56 @@
         transform: none;
     }
 
-    /*--------- about -----------*/
-    main > .section-wrap > .about > .inner {
+    /*--------- skills -----------*/
+    main > .section-wrap > .skills > .inner {
         padding: 30px 20px;
     }
 
-    main > .section-wrap > .about > .inner > .skills { 
-        margin-top: 0;
-    }
-
-    main > .section-wrap > .about > .inner > .skills > .sub-title {
+    main > .section-wrap > .skills > .inner > .sub-title {
         font-size: 1.5em;
     }
 
-    main > .section-wrap > .about > .inner > .skills > .sub-title::after {
+    main > .section-wrap > .skills > .inner > .sub-title::after {
         right: -12px;
         top: 4px;
         width: 8px;
         height: 17px;
     }
 
-    main > .section-wrap > .about > .inner > .skills > .skills-list {
+    main > .section-wrap > .skills > .inner > .skills-list {
         text-align: center;
         margin-top: 20px;
     }
 
-    main > .section-wrap > .about > .inner > .skills > .skills-list > li {
+    main > .section-wrap > .skills > .inner > .skills-list > li {
         font-size: 1.6em;
     }
 
-    main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo {
+    main > .section-wrap > .skills > .inner > .skills-list > li > strong > .skill-logo {
         width: 25px;
         height: 25px;
         margin-right: 5px;
     }
 
-    main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.jquery {
+    main > .section-wrap > .skills > .inner > .skills-list > li > strong > .skill-logo.jquery {
         width: 20px;
         height: 20px;
         margin-right: 10px;
     }
 
-    main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more { 
+    main > .section-wrap > .skills > .inner > .skills-list > li > .skills-more { 
         margin-top: 15px;
         font-size: 0.8em;
         width: 100%;
         padding: 20px;
     }
 
-    main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li > span > i {
+    main > .section-wrap > .skills > .inner > .skills-list > li > .skills-more > li > span > i {
         margin-right: 5px;
         font-size: 0.8em;
     }
 
-    main > .section-wrap > .about > .inner::-webkit-scrollbar {
+    main > .section-wrap > .skills > .inner::-webkit-scrollbar {
         width: 7px;
     }
 

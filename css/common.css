@@ -213,7 +213,7 @@ header > nav > .gnb-menu > .gnb-list.on > a > .gnb-icon {
 
 .mobile-header  > .m-gnb-menu {
     position: absolute;
-    top: -5px;
+    top: 0;
     right:10px;
 }
 
@@ -429,111 +429,30 @@ main > .section-wrap > .intro > .inner > .main-logo-box > p {
 
 
 
-/* ------------ about -------------- */
-main > .section-wrap > .about {
-}
-main > .section-wrap > .about > .inner {
+/* -------------------skills ------------------------- */
+main > .section-wrap > .skills { }
+main > .section-wrap > .skills > .inner {
     padding:30px 50px 40px;
     overflow-y:scroll;
     background-color: #1e1e1e;
 }
 
-main > .section-wrap > .about > .inner::-webkit-scrollbar {
+main > .section-wrap > .skills > .inner::-webkit-scrollbar {
 	width: 10px;
 }
-main > .section-wrap > .about > .inner::-webkit-scrollbar-thumb {
+
+main > .section-wrap > .skills > .inner::-webkit-scrollbar-thumb {
 	border-radius: 10px;
     background-color: #3d3d3d;
 }
 
-main > .section-wrap > .about > .inner > h3 {
-}
-
-main > .section-wrap > .about > .inner > .about-contents {
-}
-main > .section-wrap > .about > .inner > .about-contents > .sub-title {
+main > .section-wrap > .skills > .inner > .sub-title {
     font-size:2.3em;
-}
-
-main > .section-wrap > .about > .inner > .about-contents > .sub-title > b {
-    position: relative;
-    color: #3B3B3B;
-    color:#fff;
-}
-
-
-main > .section-wrap > .about > .inner > .about-contents > ul > li {
-    font-size: 1.5em;
-}
-
-
-main > .section-wrap > .about > .inner > .about-me {
-    font-family: 'NanumBarunGothic';
-    font-weight: 700;
-    display: none;
-}
-main > .section-wrap > .about > .inner > .about-me > .sub-title {
-    /* color:#659dcf; */
-    
-}
-main > .section-wrap > .about > .inner > .about-me > ul {}
-main > .section-wrap > .about > .inner > .about-me > ul > li {
-    
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li + li {
-    margin-top: 10px;
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li > span {}
-main > .section-wrap > .about > .inner > .about-me > ul > li > .whatIs {
-    /* color:#e38e42; */
-    display: none;
-    
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li > .whatIs > b{
-    /* background-color: cadetblue; */
-    color:#38dc24;
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li > .answer {
-    /* color:#000098; */
-    /* color:#38dc24 */
-    font-size: 1.15em;
-    /* color: #c87c47 */
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li > a:hover {
-    border-bottom: 3px solid #3B3B3B;
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li > .answer > i {
-    margin-right:5px;
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li > a {
-    /* color:#fff */
-}
-main > .section-wrap > .about > .inner > .about-me > ul > li > span {
-    /* display:block; */
-}
-
-/* -------------------skills ------------------------- */
-main > .section-wrap > .about > .inner > .skills {
-    margin-top: 20px;
-}
-main > .section-wrap > .about > .inner > .skills > .sub-title {
     display: inline-block;
     position: relative;
 }
-main > .section-wrap > .about > .inner > .skills > .sub-title > b {
-    margin-left: 5px;
-}
 
-main > .section-wrap > .about > .inner > .skills > .sub-title > .typing-icon {
-    display: none;
-}
-
-main > .section-wrap > .about > .inner > .skills > .sub-title > .typing-icon.on {
-    display: inline-block;
-}
-
-
-main > .section-wrap > .about > .inner > .skills > .sub-title::after{
+main > .section-wrap > .skills > .inner  > .sub-title::after{
     content: '';
     width: 10px;
     height:25px;
@@ -551,35 +470,48 @@ main > .section-wrap > .about > .inner > .skills > .sub-title::after{
     100% { background-color: #1e1e1e; }
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list {
+main > .section-wrap > .skills > .inner > .sub-title > b {
+    position: relative;
+    color: #3B3B3B;
+    color:#fff;
+    margin-left: 5px;
+}
+
+main > .section-wrap > .skills > .inner  > .sub-title > .typing-icon {
+    display: none;
+}
+
+main > .section-wrap > .skills > .inner  > .sub-title > .typing-icon.on {
+    display: inline-block;
+}
+
+
+main > .section-wrap > .skills > .inner > .skills-list {
     margin-top: 30px;
     opacity: 0;
     transition: 0.5s ease;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list.active {
+main > .section-wrap > .skills > .inner  > .skills-list.active {
     opacity: 1;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list > li {
+main > .section-wrap > .skills > .inner  > .skills-list > li {
     font-family: 'Cafe24Ohsquare';
     font-size: 2.3em;
     display: none;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list.active > li {
+main > .section-wrap > .skills > .inner  > .skills-list.active > li {
     display: block;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list > li + li {
+main > .section-wrap > .skills > .inner  > .skills-list > li + li {
     margin-top: 50px;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong {
 
-}
-
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo {
+main > .section-wrap > .skills > .inner  > .skills-list > li > strong > .skill-logo {
     background:no-repeat 50% 50%;
     width:40px;
     height:50px;
@@ -589,31 +521,30 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > 
     margin-right:10px;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.js {
+main > .section-wrap > .skills > .inner  > .skills-list > li > strong > .skill-logo.js {
     background-image:  url(../images/icons_javascript.png);
 }
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.vue {
+main > .section-wrap > .skills > .inner  > .skills-list > li > strong > .skill-logo.vue {
     background-image:  url(../images/icons_vue_js.png);
 }
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.html {
+main > .section-wrap > .skills > .inner > .skills-list > li > strong > .skill-logo.html {
     background-image:  url(../images/icons_html.png);
 }
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.css {
+main > .section-wrap > .skills > .inner > .skills-list > li > strong > .skill-logo.css {
     background-image:  url(../images/icons_css3.png);
 }
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.github {
+main > .section-wrap > .skills > .inner > .skills-list > li > strong > .skill-logo.github {
     background-image:  url(../images/icons_git.png);
 }
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.jquery {
+main > .section-wrap > .skills > .inner > .skills-list > li > strong > .skill-logo.jquery {
     background-image:  url(../images/icons_jquery.png);
     width:35px;
     height:45px;
     margin-right: 15px;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more {
+main > .section-wrap > .skills > .inner  > .skills-list > li > .skills-more {
     border: 1px dashed #23ff18;
-    /* border: 1px dashed #000098; */
     width: 90%;
     padding:20px;
     margin-top: 30px;
@@ -621,29 +552,24 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     font-family: 'NanumBarunGothic';
     font-weight: bold;
 }
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li + li {
+main > .section-wrap > .skills > .inner > .skills-list > li > .skills-more > li + li {
     margin-top:15px
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li > span {
+main > .section-wrap > .skills > .inner > .skills-list > li > .skills-more > li > span {
     color:#30A5AC;
 }
 
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li > span > i {
+main > .section-wrap > .skills > .inner > .skills-list > li > .skills-more > li > span > i {
     vertical-align: middle;
     margin-right: 10px;
     font-size: 0.8em;
     color:#30A5AC;
 }
-main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li > p {
+main > .section-wrap > .skills > .inner > .skills-list > li > .skills-more > li > p {
     font-size: 0.7em;
     margin-top: 15px;
     font-weight: normal;
-}
-
-
-.skills-icon {
-    display: none;
 }
 
 
@@ -676,18 +602,15 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
 }
 
 .portfolio > .inner > .portfolio-contents > h4 {
-    /* 2.8em */
     font-size: 2em;
     position: relative;
     display: inline-block;
     color: #000098;
     color: #174078;
-    /* font-family: 'DungGeunMo'; */
     font-weight: bold;
     margin-left: 10px;
     margin-bottom: 30px;
     background: linear-gradient(#fff 50%,#e8e8e8 50%);
-    
 }
 
 .portfolio > .inner > .portfolio-contents > .portfolio-list {
@@ -704,17 +627,8 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     width:50%
 }
 
-.portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
-}
-
 .portfolio > .inner > .portfolio-contents > .portfolio-list.moneyboo > .img-area {
     margin-top: 50px;
-
-}
-
-.portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area {
-    /* border: 1px solid red; */
-
 }
 
 .portfolio > .inner > .portfolio-contents > .left > .txt-area {
@@ -724,7 +638,6 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
 .portfolio > .inner > .portfolio-contents > .right > .txt-area {
     text-align:left;
 }
-
 
 .portfolio > .inner > .portfolio-contents > .left > .img-area,
 .portfolio > .inner > .portfolio-contents > .right > .txt-area {
@@ -736,8 +649,6 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
 .portfolio > .inner > .portfolio-contents > .left > .txt-area {
     float:right;
 }
-
-
 
 
 .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
@@ -752,16 +663,9 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     display: block;
     position: relative;
     height: 100%;
-    /* width:450px;
-    height:350px;
-    
-    box-shadow: 10px 13px 10px 0px #d2d2d29e;
-    overflow: hidden; */
-    /* margin: 0 auto; */
 }
 
 .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link > .pf-img {
-    /* position: absolute;*/
     width: 100%;
     height: 100%; 
     background: no-repeat;
@@ -941,10 +845,6 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
     font-size:1.5em;
     border-radius:10px;
     font-weight: bold;
-    /* background-color: #183153;
-    border:3px solid #FFD43B;
-    color: #FFD43B;
-    box-shadow: rgb(255, 212, 59) 0px 5px; */
     background-color: #174078;
     border: 3px solid #FFD43B;
     color: #ffdc61;
@@ -969,10 +869,6 @@ main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-m
 
 .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button > i {
     margin-right:15px;
-}
-
-.portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button::hover {
-    
 }
 
 .portfolio > .inner > .website {
@@ -1118,7 +1014,6 @@ body.black main > .section-wrap > .contact > .inner > .contact-list > ul > li:ho
     left: 0;
     width: 100%;
     height: 100%;
-    display: none;
 }
 
 
