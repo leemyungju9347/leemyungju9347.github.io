@@ -1,0 +1,492 @@
+/*
+    1. pc : 1024px ~
+    2. 테블릿 가로, 테블릿 세로 : 768px ~ 1023px
+    3. 모바일 가로, 모바일 세로 : ~ 768px
+*/
+
+
+@media screen and (max-width:1192px) {
+    /* body {background: magenta;} */
+
+    
+
+
+    /* -----------portfolio--------------- */
+    .frame {
+        padding-top: 33px;
+    }
+    
+
+    .frame::before, .frame::after, .frame-inner::before {
+        width: 13px;
+        height: 13px;
+    }
+
+    .frame::after {
+        left: 40px;
+    }
+
+    .frame-inner::before {
+        left: 61px;
+        top: -22px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
+        width:380px;
+        height:280px;
+        margin-top: 20px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .weather > .img-area {
+        margin-top:40px;
+    } 
+
+    .portfolio > .inner > .portfolio-contents > .hackernews > .img-area {
+        margin-top:30px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link > .click-message {
+        top: -27px;
+        font-size: 1.15em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link > .pf-img {
+        background-position: center top;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
+        font-size: 1.3em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .triple > button {
+        padding: 10px 30px;
+        font-size: 1.3em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .moneyboo > .txt-area > .btn-box > button > i {
+        display: none;
+    }
+
+    
+}
+
+/* ------------ 태블릿 ------------*/
+@media screen and (max-width:1023px) {
+    /*---------header-----------*/
+    header {
+        position: fixed;
+        bottom: 15px;
+        z-index: 1000;
+        height: auto;
+        text-align: center;
+        background: #3939396b;
+        border-radius: 20px;
+        width:50%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 0;
+        float: none;
+        display: none;
+    }
+
+    header > nav > .gnb-menu > li {
+        display: inline-block;
+    }
+
+    header > nav > .gnb-menu > li > a > .gnb-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    header > nav > .gnb-menu > li.contact > a > .gnb-icon {
+        margin-bottom: 5px;
+    }
+
+    header > nav > .gnb-menu > li + li {
+        margin-top:0;
+        margin-left:15px;
+    }
+
+    body.black header > nav > .gnb-menu > li > a > span {
+        color:#fff
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    main {
+        height: 95%;
+    }
+
+    /*--------- main -----------*/
+    main {
+        width: 100%;
+        float: none;
+    }
+
+    /*--------- intro -----------*/
+    main > .section-wrap > .intro > .inner > .main-logo-box {
+        padding: 4% 2%;
+        min-width: 400px;
+        max-width: 420px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > span {
+        font-size: 7.5em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .logo-icon {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .rt {
+        margin-left: -5px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .folio {
+        letter-spacing: 4px;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > .logo-txt {
+        font-size: 1.5em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > strong {
+        top:-38px
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > p {
+        left: -125px;
+        bottom: 90px;
+    }
+
+
+    /*--------- about -----------*/
+    .typing-title {
+        display: none;
+    }
+
+    /*--------- portfolio -----------*/
+
+
+
+    /*--------- loading -----------*/
+    .loading-area {
+        z-index: 1000;
+    }
+
+    .loading-area > .loading-wrap {
+        width: 50%;
+        height: 60px;
+    }
+    
+    .loading-area > .loading-wrap > p {
+        top: -41px;
+        font-size: 1.5em;
+    }
+
+    .loading-area > .loading-wrap > span {
+        top: 50%;
+        font-size: 1.5em;
+        transform: translateY(-50%);
+    }
+
+    /* ---------- contact ----------- */
+    .section-wrap > .contact { 
+        min-width: 500px; 
+        height: 355px;
+    }
+    .section-wrap > .contact > .inner > .contact-list > p {
+        font-size: 2.3em;
+    }
+    .section-wrap > .contact > .inner > .contact-list > ul > li > a {
+        font-size: 2em;
+    }
+
+
+}
+
+/* ------------ 모바일 ------------*/
+@media screen and (max-width:768px) {
+    body {
+        /* background-color: peachpuff !important; */
+        padding: 1.15% !important;
+    }
+
+    .wrap {
+        min-height: calc(570px - 2.3%);
+    }
+
+
+
+    /*--------- header -----------*/
+    .mobile-header  > .m-gnb-menu {
+        top: 5px;
+    }
+
+    .mobile-header  > .m-gnb-menu > ul > li + li {
+        margin-left: 5px;
+    }
+    .mobile-header  > .m-gnb-menu > ul > li > a {
+        font-size: 1.2em;
+    }
+
+    /*--------- mail -----------*/
+    main > .section-wrap > section {
+        padding-top: 45px;
+    }
+
+    main > .section-wrap > section > h3 {
+        font-size: 1.3em;
+        top: 11px;
+    }
+
+    .circles {
+        top: 15px;
+        left: 19px;
+    }
+
+    .circles > .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .circles > .circle + .circle {
+        margin-left: 6px;
+    }
+    
+
+    /*--------- intro -----------*/
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > .logo-icon {
+        width: 80px;
+        height: 80px;
+        margin-top: 0;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box {
+        min-width: 260px;
+        padding: 4% 0;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > h1 > span {
+        font-size: 5em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > .logo-txt {
+        font-size: 0.8em;
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > strong {
+        top:-31px
+    }
+
+    main > .section-wrap > .intro > .inner > .main-logo-box > p {
+        bottom: -36px;
+        left: 0;
+        transform: none;
+    }
+
+    /*--------- about -----------*/
+    main > .section-wrap > .about > .inner {
+        padding: 30px 20px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills { 
+        margin-top: 0;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .sub-title {
+        font-size: 1.5em;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .sub-title::after {
+        right: -12px;
+        top: 4px;
+        width: 8px;
+        height: 17px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li {
+        font-size: 1.6em;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > strong > .skill-logo.jquery {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more { 
+        margin-top: 15px;
+        font-size: 0.8em;
+        width: 100%;
+        padding: 20px;
+    }
+
+    main > .section-wrap > .about > .inner > .skills > .skills-list > li > .skills-more > li > span > i {
+        margin-right: 5px;
+        font-size: 0.8em;
+    }
+
+    main > .section-wrap > .about > .inner::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    /*--------- portfolio -----------*/
+
+
+    /*--------- loading -----------*/
+    .loading-area {
+        
+    }
+
+    .loading-area > .loading-wrap {
+        width: 70%;
+        height: 45px;
+    }
+    
+    .loading-area > .loading-wrap > p {
+        font-size: 0.9em;
+        top: -30px;
+        left: 5px;
+
+    }
+
+    .loading-area > .loading-wrap > span {
+        font-size: 1.15em;
+        left: 12px;
+    }
+
+
+    /*--------- contact -----------*/
+
+    .section-wrap > .contact {       
+        min-width: 340px;
+        height: 260px;
+        padding-top: 40px;
+    }
+
+    .section-wrap > .contact > h3 {
+        font-size: 1.3em;
+        top: 8px;
+    }
+
+    .section-wrap > .contact > .inner {
+        padding: 10px;
+    } 
+
+    .section-wrap > .contact > .inner > .contact-list > p {
+        font-size: 1.6em;
+    }
+
+    .section-wrap > .contact > .inner > .contact-list > ul {
+        margin-top: 15px;
+        padding-left: 5px;
+    }
+
+    .section-wrap > .contact > .inner > .contact-list > ul > li > a {
+        font-size: 1.4em;
+    }
+
+    .section-wrap > .contact > .circles > .circle > i {
+        font-size: 0.5em;
+    }
+
+    .section-wrap > .contact > .circles {
+        top: 11px;
+        left: 20px;
+    }
+ 
+
+    .section-wrap > .contact > .circles > .circle + .circle {
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .half {
+        width: 60%;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link {
+        height: 29vh;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link > .click-message {
+        top: -19px;
+        font-size: 0.8em;
+    }
+
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
+        min-height: 223px;
+        min-width: 275px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link > img {
+        min-height: 184px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area {
+        width: 100%;
+    }
+    
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .pf-title {
+        font-size: 1.5em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .version {
+        font-size: 1.15em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .light-headline {
+        font-size: 0.5em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
+        font-size: 1.15em;
+    }
+
+    .frame {
+        padding-top: 25px;
+    }
+
+    .frame::before, .frame::after, .frame-inner::before {
+        width: 10px;
+        height: 10px;
+        top: 7px;
+    }
+
+    .frame::before {
+        left: 13px;
+    }
+
+    .frame::after {
+        left: 29px;
+    }
+
+    .frame-inner::before {
+        left: 45px;
+        top: -18px;
+    }
+
+
+}

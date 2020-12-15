@@ -2,6 +2,8 @@ const body = document.querySelector('body');
 const gnbList = body.querySelectorAll('header > nav > .gnb-menu > li');
 const sectionElms = body.querySelectorAll('main > .section-wrap > section');
 const sectionWrap = body.querySelector('main > .section-wrap');
+const subList = body.querySelector('.sub-list');
+const subElm = subList.querySelectorAll('li');
 const typing = body.querySelector('section.about .typing');
 const typingIcon = body.querySelector('.sub-title > .typing-icon');
 const skillList = body.querySelector('.skills-list');
@@ -16,6 +18,11 @@ const mobileContact = body.querySelector('.mobile-header > .m-gnb-menu > ul > .c
 
 // console.log(mobileContact);
 
+console.log(sectionElms);
+console.log(gnbList);
+
+console.log(subList);
+console.log(subElm);
 
 let timer; // 셋타임아웃 컨트롤 할 수 있는 전역변수
 let loadingTimer;
@@ -78,30 +85,94 @@ function typingEffect(){
    
 }
 
+
 // PC header click 이벤트
 for(let i = 0; i < gnbList.length - 1; i++){
     gnbList[i].addEventListener('click', (ev)=>{
         ev.preventDefault();
 
-        // 전체 classList, active 지우기
-        for(let j = 0; j < sectionElms.length; j++){
-            sectionElms[j].classList.remove('active');
-            gnbList[j].classList.remove('on');
-            body.classList.remove('black');
-        }
+        const liElm = ev.target.parentNode.parentNode;
 
-        // 클릭시 해당 인덱스 active
-        sectionElms[i].classList.add('active');
-        gnbList[i].classList.add('on');
+        if( liElm.tagName !== 'LI' ) return
+        
+
+        // 전체 classList, active 지우기
+        setionAllRemove()
+        gnbAllRemove()
+        
+        
 
         // 위치가 about이면
         if( sectionElms[i].classList.contains('about') ) {   
             body.classList.add('black'); 
             setTimeout(typingEffect,500); //타이핑효과 호출
-          
         }
-    })
 
+
+        // 위치가 portfolio면
+        if( gnbList[i].classList.contains('portfolio') ) {
+            let targetSection = sectionElms[i];
+            let sectionInner = sectionElms[i].children[1];
+
+            subGnbRemove();
+            console.log(gnbList[i]);
+
+            // gnb 
+            contactBtn.style.display = 'none';
+            subList.style.display = 'block';
+
+            // 클릭한 엘리먼트가 자바스크립트일 경우
+            if( liElm.classList.contains('js') ) {
+                targetSection = sectionElms[i+1];
+                sectionInner = sectionElms[i+1].children[1]
+                targetSection.classList.add('active');
+            
+            // 클릭한 엘리먼트가 vue일 경우
+            }else {
+                console.log('vue');
+                subElm[0].classList.add('on')
+                targetSection.classList.add('active');
+            }
+
+            sectionInner.scrollTop = '0';
+            liElm.classList.add('on')
+
+            
+
+        } else {
+            // gnb
+            contactBtn.style.display = 'block';
+            subList.style.display = 'none';
+            sectionElms[i].classList.add('active');
+        }
+
+        gnbList[i].classList.add('on');
+
+        
+        
+
+    })
+}
+
+// 섹션 클래스네임 전체 삭제 함수
+function setionAllRemove() {
+    for(let j = 0; j < sectionElms.length; j++){
+        sectionElms[j].classList.remove('active');
+    }
+}
+
+// gnb, body 클래스네임 전체 삭제 함수
+function gnbAllRemove() {
+    for(let k = 0; k < gnbList.length; k++) {
+        gnbList[k].classList.remove('on');
+        body.classList.remove('black');
+    }
+}
+
+function subGnbRemove() {
+    subElm.forEach(elm=>{
+        elm.classList.remove('on')
+    })
 }
 
 // mobile header click 이벤트
@@ -150,4 +221,10 @@ mobileContact.addEventListener('click', ev=>{
     ev.preventDefault();
     contactElm.classList.add('active');
 })
+
+function init() {
+    subList.style.display = 'none';
+}
+
+init()
 

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" media="all" href="css/common.css">
 	<link rel="stylesheet" media="all" href="css/reset.css">
+	<link rel="stylesheet" media="all" href="css/mediaqueries.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
@@ -14,48 +15,43 @@
 		<header>
 			<nav>
 				<ul class="gnb-menu">
-					<li class="on">
+					<li class="gnb-list on">
 						<a href="">
 							<i class="home gnb-icon"></i>
 							<span>HOME</span>
 						</a>
 					</li>
-					<li>
+					<li class="gnb-list">
 						<a href="">
 							<i class="gnb-icon"></i>
 							<span>ABOUT</span>
 						</a>
 					</li>
-					<li>
+					<li class="gnb-list portfolio">
 						<a href="">
 							<i class="gnb-icon"></i>
 							<span>PORTFOLIO</span>
-							<ul style="display: none;">
-								<li>
-									<a href="">
-										<i class="gnb-icon"></i>
-										<span>vue.js</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<i class="gnb-icon"></i>
-										<span>javascript</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<i class="gnb-icon"></i>
-										<span>website</span>
-									</a>
-								</li>
-							</ul>
 						</a>
+						<!-- 서브메뉴 -->
+						<ul class="sub-list itemShow">
+							<li class="vue">
+								<a href="">
+									<i class="list-icon"></i>
+									<span>Vue.js</span>
+								</a>
+							</li>
+							<li class="js">
+								<a href="">
+									<i class="list-icon"></i>
+									<span>Javascript</span>
+								</a>
+							</li>
+						</ul>
 					</li>
-					<li class="contact">
+					<li class="gnb-list contact itemShow">
 						<a href="">
 							<i class="gnb-icon"></i>
-							<span>CONTACT</span>
+							<span>Contact</span>
 						</a>
 					</li>
 				</ul>
@@ -66,16 +62,19 @@
 			<div class="m-gnb-menu dunggeunmo">
 				<ul>
 					<li>
-						<a href="">HOME</a>
+						<a href="">Home</a>
 					</li>
 					<li>
-						<a href="">SKILLS</a>
+						<a href="">About</a>
 					</li>
 					<li>
-						<a href="">PORTFOLIO</a>
+						<a href="">Vue.js</a>
+					</li>
+					<li>
+						<a href="">Javascript</a>
 					</li>
 					<li class="contact">
-						<a href="">CONTACT</a>
+						<a href="">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -218,13 +217,44 @@
 						<div class="circle"></div>
 					</div>
 				</section>
-				<section class="portfolio change active">
-					<h3>PORTFOLIO</h3>
+				<!-- 포트폴리오 - vue.js -->
+				<section class="portfolio vue change active">
+					<h3>Vue.js</h3>
 					<div class="inner">
-						<div class="portfolio-contents project">
-							<h4>PROJECT >></h4>
+						<div class="portfolio-contents vue">
+							<!-- movie-app -->
+							<div class="portfolio-list left clear movieApp">
+								<div class="img-area half frame">
+									<a href="https://github.com/leemyungju9347/Movie-Search" class="pf-link frame-inner" target="blank" >
+										<span class="click-message">Click me!</span>
+										<div class="pf-img"></div>
+									</a>								
+								</div>
+								<div class="txt-area half">
+									<div class="headline">
+										<strong class="pf-title">영화 검색 서비스</strong><br>
+										<span class="version">with vue.js</span>
+										<ul class="light-headline">
+											<li># Vue.js</li>
+											<li># Javascript</li>
+											<li># HTML</li>
+											<li># CSS</li>
+										</ul>
+									</div>
+									<p class="pf-desc">
+										<span>vue.js</span> 프레임워크로 제작한 <span>일일 박스오피스 순위</span>를 제공하고 찾고싶은 영화나 컨텐츠를 카테고리별로 <span>검색</span>하여 영화 상세정보를 확인할 수 있는 영화 검색 웹 서비스입니다.<span>장르별</span>로 편리하게 검색할 수 있도록 버튼을 만들고 마우스호버시 작품정보를  확인할 수 있는 기능을 제공하고 있습니다. <span>api</span>에서 제공해주는 키워드를 이용하여 <span>비슷한 영화를 추천</span>해주는 알고리즘을 구현했습니다.
+									</p>
+									<div class="btn-box">
+										<!-- <button onclick="window.open('https://github.com/leemyungju9347')"><i class="fas fa-code-branch"></i>GitHub link</button> -->
+										<button><i class="fas fa-code-branch"></i>GitHub link</button>
+										<!-- <i class="fas fa-code-branch"></i> -->
+										<!-- <i class="fas fa-terminal"></i> -->
+										<!-- <i class="fas fa-code"></i> -->
+									</div>
+								</div>
+							</div>
 							<!-- moneyboo -->
-							<div class="portfolio-list left clear moneyboo">
+							<div class="portfolio-list right clear moneyboo">
 								<div class="img-area half frame">
 									<a href="https://elated-albattani-035181.netlify.app/" class="pf-link frame-inner" target="blank" >
 										<span class="click-message">Click me!</span>
@@ -236,38 +266,25 @@
 										<strong class="pf-title">머니부</strong><br>
 										<span class="version">with vue.js</span>
 										<ul class="light-headline">
+											<li># Vue.js</li>
+											<li># Javascript</li>
+											<li># firebase</li>
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
-									<div class="btn-box">
-										<button type="button" onclick="window.open('https://github.com/leemyungju9347')">Js CODE</button>
-									</div>
-								</div>
-							</div>
-							<!-- calculator -->
-							<div class="portfolio-list right clear calculator">
-								<div class="img-area half frame">
-									<a href="calculator/index.html" class="pf-link frame-inner" target="_blank" >
-										<span class="click-message">Click me!</span>
-										<div class="pf-img"></div>
-									</a>
-								</div>
-								<div class="txt-area half">
-									<div class="headline">
-										<strong class="pf-title">calculator</strong><br>
-										<span class="version">with javascript</span>
-										<ul class="light-headline">
-											<li># HTML</li>
-											<li># CSS</li>
-											<li># Vanilla javascript</li>
-										</ul>
-									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 계산기 프로그램입니다.</p>
-									<div class="btn-box">
-										<button>Vue.js CODE</button>
+									<p class="pf-desc">사용자의 소비패턴을 분석하고 통계로 산출하여 안정적인 재정관리를 도와주는 가계부 페이지 '머니부'입니다.<span>vue.js</span>로 제작한 협업프로젝트로 <span>Git</span>을 이용해 소스를 관리하고 협업하였고, <span>Gnb 메뉴</span>와 <span>회원 인증</span> 페이지를 담당했습니다.
+									<br/>
+									<br/>
+									
+									<span>회원 인증 페이지</span>는 <span>firebase</span>의 <span>Authentication</span>으로 계정을 등록하고, 로그인 / 로그아웃할 수 있도록 기능을 구현했으며, <span>firestore</span>에서 회원 고유의 <span>데이터</span>를 저장하고 관리하였습니다.
+									<br/>
+									<br/>
+									<span>SideGnbForm</span>은 머니부의 페이지 메뉴들과 회원정보 관련 기능이 구성되어 있는 컴포넌트로 전반적인 <span>라우터</span> 처리와 <span>네비게이션가드</span>를 활용해 사용자의 인증정보가 없으면 해당 페이지에 접근하지 못하도록 기능을 구현했습니다.</p>
+									<div class="btn-box triple">
+										<button type="button" onclick="window.open('https://github.com/leemyungju9347')"><i class="fas fa-code-branch"></i>sideGnb</button>
+										<button type="button" onclick="window.open('https://github.com/leemyungju9347')"><i class="fas fa-code-branch"></i>login</button>
+										<button type="button" onclick="window.open('https://github.com/leemyungju9347')"><i class="fas fa-code-branch"></i>signup</button>
 									</div>
 								</div>
 							</div>
@@ -284,47 +301,24 @@
 										<strong class="pf-title">Hacker News</strong><br>
 										<span class="version">with vue.js</span>
 										<ul class="light-headline">
+											<li># Vue.js</li>
+											<li># Javascript</li>
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
+									<p class="pf-desc"><span>vue.js</span> 프레임 워크를 이용하여 제작한 IT 소셜 웹사이트 해커뉴스입니다. <span>Axios</span>를 이용한 <spanapi></span>를 호출하여 데이터를 다루고 <span>vuex</span>를 이용한 상태관리와 <span>router</span>의 전반적인 이동 로직을 구현하였습니다.</p>
 									<div class="btn-box">
-										<button>Vue.js CODE</button>
-									</div>
-								</div>
-							</div>
-							<!-- todolist-js -->
-							<div class="portfolio-list right clear todolist-js">
-								<div class="img-area half frame">
-									<a href="ToDoList-Js/index.html" class="pf-link frame-inner" target="blank" >
-										<span class="click-message">Click me!</span>
-										<img src="./images/todolist_jsver02.png" alt="">
-									</a>
-								</div>
-								<div class="txt-area half">
-									<div class="headline">
-										<strong class="pf-title">To Do List</strong><br>
-										<span class="version">with js</span>
-										<ul class="light-headline">
-											<li># HTML</li>
-											<li># CSS</li>
-											<li># Vanilla javascript</li>
-										</ul>
-									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
-									<div class="btn-box">
-										<button>Vue.js CODE</button>
+										<button><i class="fas fa-code-branch"></i>GitHub link</button>
 									</div>
 								</div>
 							</div>
 							<!-- todolist-vue -->
-							<div class="portfolio-list left clear todolist-vue">
+							<div class="portfolio-list right clear todolist-vue">
 								<div class="img-area half frame">
 									<a href="https://dazzling-davinci-6deee4.netlify.app/" class="pf-link frame-inner" target="blank" >
 										<span class="click-message">Click me!</span>
-										<img src="./images/portfoliolist-img-todolist-vue01.png" alt="">
+										<div class="pf-img"></div>
 									</a>
 								</div>
 								<div class="txt-area half">
@@ -332,19 +326,20 @@
 										<strong class="pf-title">To Do List</strong><br>
 										<span class="version">with vue.js</span>
 										<ul class="light-headline">
+											<li># Vue.js</li>
+											<li># Javascript</li>
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
+									<p class="pf-desc"><span>Vue.js</span> 프레임워크를 활용한 투두리스트 페이지입니다. <span>Event Bus</span>를 이용해 컴포넌트간 데이터를 주고 받는 방식으로 구현했으며, 리스트를 추가하고 <span>수정</span>, <span>삭제</span>, <span>완료</span> 기능까지 제공하도록 구현했습니다.</p>
 									<div class="btn-box">
-										<button>Vue.js CODE</button>
+										<button><i class="fas fa-code-branch"></i>GitHub link</button>
 									</div>
 								</div>
 							</div>
 							<!-- weather-app -->
-							<div class="portfolio-list right clear weather">
+							<div class="portfolio-list left clear weather">
 								<div class="img-area half frame">
 									<a href="https://musing-mirzakhani-1aeb0f.netlify.app/" class="pf-link frame-inner" target="blank" >
 										<span class="click-message">Click me!</span>
@@ -356,23 +351,89 @@
 										<strong class="pf-title">Global Weather</strong><br>
 										<span class="version">with vue.js</span>
 										<ul class="light-headline">
+											<li># Vue.js</li>
+											<li># Javascript</li>
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
+									<p class="pf-desc"><span>Vue.js</span> 프레임워크로 제작한 세계 각국의 날씨 정보를 제공하는 웹페이지입니다. 날씨 정보는 오늘의 날씨와 주간 날씨로 나누어서 제공하고 있고, <span>Axios</span> 를 이용하여 <span>api</span> 데이터를 불러오고 <span>vuex</span> 를 이용하여 상태관리를 하도록 구현했습니다. <span>moment.js</span> 플러그인을 사용하여 현지시간에 맞는 시간을 보여주도록 구현했으며, 일몰과 일출 시간에 따라 낮과 밤을 나누는 색감을 조절해서 표현했습니다.</p>
 									<div class="btn-box">
-										<button>Vue.js CODE</button>
+										<button><i class="fas fa-code-branch"></i>GitHub link</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="portfolio-contents website">
-							<h4>WEBSITE >></h4>
-							<div class="portfolio-list left clear my-portfolio">
+					</div>
+					<div class="circles">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+				</section>
+				<!-- 포트폴리오 - 자바스크립트 / 웹사이트 -->
+				<section class="portfolio vanilla change">
+					<h3>JavaScript</h3>
+					<div class="inner">
+						<!-- 자바스크립트 -->
+						<div class="portfolio-contents vanilla">
+							<h4>JavaScript >></h4>
+							<!-- calculator -->
+							<div class="portfolio-list left clear calculator">
 								<div class="img-area half frame">
-									<a href="" class="pf-link frame-inner">
+									<a href="calculator/index.html" class="pf-link frame-inner" target="_blank" >
+										<span class="click-message">Click me!</span>
+										<div class="pf-img"></div>
+									</a>
+								</div>
+								<div class="txt-area half">
+									<div class="headline">
+										<strong class="pf-title">calculator</strong><br>
+										<span class="version">with javascript</span>
+										<ul class="light-headline">
+											<li># Javascript</li>
+											<li># HTML</li>
+											<li># CSS</li>
+										</ul>
+									</div>
+									<p class="pf-desc"><span>바닐라 자바스크립트</span>를 이용하여 제작한 계산기 프로그램입니다. 간단한 스위치 버튼으로 <span>Dark / Light 모드</span>를 밝기를 조절하여 사용자의 시각을 편리하도록 도와주는 기능을 구현했습니다.</p>
+									<div class="btn-box">
+										<button onclick="window.open('https://github.com/leemyungju9347/leemyungju9347.github.io/blob/master/calculator/src/index.js')"><i class="fas fa-code-branch"></i>GitHub link</button>
+									</div>
+								</div>
+							</div>
+							<!-- todolist-js -->
+							<div class="portfolio-list right clear todolist-js">
+								<div class="img-area half frame">
+									<a href="ToDoList-Js/index.html" class="pf-link frame-inner" target="blank">
+										<span class="click-message">Click me!</span>
+										<div class="pf-img"></div>
+									</a>
+								</div>
+								<div class="txt-area half">
+									<div class="headline">
+										<strong class="pf-title">To Do List</strong><br>
+										<span class="version">with js</span>
+										<ul class="light-headline">
+											<li># Javascript</li>
+											<li># HTML</li>
+											<li># CSS</li>
+										</ul>
+									</div>
+									<p class="pf-desc"><span>바닐라 자바스크립트</span>로 제작한 투두리스트입니다. <span>완료</span>, <span>수정</span>, <span>삭제</span> 기능이 가능하며 <span>로컬스토리지</span>로 사용자의 고유의 닉네임을 저장하여 웹페이지를 나가더라도 투두리스트 데이터를 불러올 수 있도록 구현했습니다. 또한 <span>contenteditable</span> 속성을 사용하여 직접 사용자의 닉네임을 웹페이지에서 수정할 수 있는 기능을 제공하고 있습니다. </p>
+									<div class="btn-box">
+										<button onclick="window.open('https://github.com/leemyungju9347/ToDoList-Js')"><i class="fas fa-code-branch"></i>GitHub link</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 웹사이트 -->
+						<div class="portfolio-contents website">
+							<h4>Website >></h4>
+							<!-- 개인포트폴리오 -->
+							<div class="portfolio-list left clear myPortfolio">
+								<div class="img-area half frame">
+									<a href="https://leemyungju9347.github.io/" class="pf-link frame-inner" target="blank">
 										<span class="click-message">Click me!</span>
 										<div class="pf-img"></div>
 									</a>
@@ -384,22 +445,23 @@
 										<ul class="light-headline">
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
+											<li># Javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
-									<div class="btn-box">
+									<p class="pf-desc">직접 디자인한 개인 포트폴리오용 사이트입니다. <span>웹접근성</span>을 준수하여 마크업하였으며, <span>미디어쿼리</span>를 이용하여 <span>PC</span>, <span>Tablet</span>, <span>Mobile</span> 다양한 환경에서도 유동적으로 볼 수 있는 <span>반응형</span>으로 제작했습니다. <span>바닐라 자바스크립트</span>로 동적인 기능을 구현했습니다.</p>
+									<div class="btn-box triple">
 										<button>HTML</button>
 										<button>CSS</button>
 										<button>JS</button>
 									</div>
 								</div>
 							</div>
-							<div class="portfolio-list right clear">
+							<!-- 생명보험협회 -->
+							<div class="portfolio-list right clear koreaLife">
 								<div class="img-area half frame">
-									<a href="" class="pf-link frame-inner">
+									<a href="Korea-Life-Insurance/index.html" class="pf-link frame-inner" target="blank">
 										<span class="click-message">Click me!</span>
-										<img src="./images/생명보험협회.png" alt="">
+										<div class="pf-img"></div>
 									</a>
 								</div>
 								<div class="txt-area half">
@@ -409,22 +471,23 @@
 										<ul class="light-headline">
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
+											<li># Javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
-									<div class="btn-box">
+									<p class="pf-desc"><span>웹접근성</span>을 준수하여 마크업한 사이트입니다. <span>미디어쿼리</span>를 이용하여 <span>PC</span>, <span>Tablet</span>, <span>Mobile</span> 다양한 환경에서 유동적으로 볼 수 있는 <span>반응형</span>으로 제작했습니다. 바닐라 자바스크립트만으로 슬라이드를 자체제작하고 동적인 기능을 구현했습니다.</p>
+									<div class="btn-box triple">
 										<button>HTML</button>
 										<button>CSS</button>
 										<button>JS</button>
 									</div>
 								</div>
 							</div>
-							<div class="portfolio-list left clear">
+							<!-- 현대글로비스 -->
+							<div class="portfolio-list left clear hyundai">
 								<div class="img-area half frame">
-									<a href="" class="pf-link frame-inner">
+									<a href="hyundai/index.html" class="pf-link frame-inner" target="blank">
 										<span class="click-message">Click me!</span>
-										<img src="./images/현대글로비스.png" alt="">
+										<div class="pf-img"></div>
 									</a>
 								</div>
 								<div class="txt-area half">
@@ -434,36 +497,36 @@
 										<ul class="light-headline">
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
+											<li># Javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
-									<div class="btn-box">
+									<p class="pf-desc"><span>웹접근성</span>을 준수하여 마크업한 사이트입니다. <span>미디어쿼리</span>를 이용하여 <span>PC</span>, <span>Tablet</span>, <span>Mobile</span> 다양한 환경에서 유동적으로 볼 수 있는 <span>반응형</span>으로 제작했습니다. <span>바닐라 자바스크립트만</span>으로 슬라이드를 자체제작하고 동적인 기능을 구현했습니다.</p>
+									<div class="btn-box triple">
 										<button>HTML</button>
 										<button>CSS</button>
 										<button>JS</button>
 									</div>
 								</div>
 							</div>
-							<div class="portfolio-list right clear">
+							<!-- 네이버 -->
+							<div class="portfolio-list right clear naverCorp">
 								<div class="img-area half frame">
-									<a href="" class="pf-link frame-inner">
+									<a href="navercorporation/index.html" class="pf-link frame-inner" target="blank">
 										<span class="click-message">Click me!</span>
-										<img src="./images/NAVERCorporation.png" alt="">
+										<div class="pf-img"></div>
 									</a>
 								</div>
 								<div class="txt-area half">
 									<div class="headline">
 										<strong class="pf-title">네이버</strong><br>
-										<!-- <span class="version">Responsive Web</span> -->
 										<ul class="light-headline">
 											<li># HTML</li>
 											<li># CSS</li>
-											<li># Vanilla javascript</li>
+											<li># Javascript</li>
 										</ul>
 									</div>
-									<p class="pf-desc">바닐라 자바스크립트를 이용하여 제작한 todolist 입니다.</p>
-									<div class="btn-box">
+									<p class="pf-desc"><span>웹접근성</span>을 준수하여 마크업한 데스크탑 페이지로 <span>PC</span>브라우저 화면에 최적화 되도록 구현했습니다. <span>바닐라 자바스크립트</span>만을 사용해 슬라이드를 자체제작했으며, 동적인 기능을 구현했습니다.</p>
+									<div class="btn-box triple">
 										<button>HTML</button>
 										<button>CSS</button>
 										<button>JS</button>
