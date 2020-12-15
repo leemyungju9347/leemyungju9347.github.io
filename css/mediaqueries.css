@@ -36,6 +36,7 @@
         height:280px;
         margin-top: 20px;
     }
+    
 
     .portfolio > .inner > .portfolio-contents > .weather > .img-area {
         margin-top:40px;
@@ -54,6 +55,18 @@
         background-position: center top;
     }
 
+    .portfolio > .inner > .portfolio-contents > .moneyboo > .txt-area > .headline > .light-headline > li {
+        font-size: 0.9em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .moneyboo > .txt-area > .headline > .light-headline > li + li {
+        margin-left: 3px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .pf-desc {
+        font-size: 1.2em;
+    }
+
     .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
         font-size: 1.3em;
     }
@@ -62,6 +75,7 @@
         padding: 10px 30px;
         font-size: 1.3em;
     }
+    
 
     .portfolio > .inner > .portfolio-contents > .moneyboo > .txt-area > .btn-box > button > i {
         display: none;
@@ -172,6 +186,18 @@
     }
 
     /*--------- portfolio -----------*/
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
+        width: 350px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .pf-title {
+        font-size: 2.5em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
+        padding: 12px 20px;
+        font-size: 1.15em;
+    }
 
 
 
