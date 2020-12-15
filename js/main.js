@@ -16,13 +16,6 @@ const loadingMsg = loadingArea.querySelector('.loading-area .loading-msg');
 const mobileGnb = body.querySelectorAll('.mobile-header > .m-gnb-menu > ul > li');
 const mobileContact = body.querySelector('.mobile-header > .m-gnb-menu > ul > .contact')
 
-// console.log(mobileContact);
-
-console.log(sectionElms);
-console.log(gnbList);
-
-console.log(subList);
-console.log(subElm);
 
 let timer; // 셋타임아웃 컨트롤 할 수 있는 전역변수
 let loadingTimer;
@@ -115,7 +108,6 @@ for(let i = 0; i < gnbList.length - 1; i++){
             let sectionInner = sectionElms[i].children[1];
 
             subGnbRemove();
-            console.log(gnbList[i]);
 
             // gnb 
             contactBtn.style.display = 'none';
@@ -148,8 +140,6 @@ for(let i = 0; i < gnbList.length - 1; i++){
 
         gnbList[i].classList.add('on');
 
-        
-        
 
     })
 }
@@ -159,13 +149,14 @@ function setionAllRemove() {
     for(let j = 0; j < sectionElms.length; j++){
         sectionElms[j].classList.remove('active');
     }
+
+    body.classList.remove('black');
 }
 
 // gnb, body 클래스네임 전체 삭제 함수
 function gnbAllRemove() {
     for(let k = 0; k < gnbList.length; k++) {
         gnbList[k].classList.remove('on');
-        body.classList.remove('black');
     }
 }
 
@@ -179,17 +170,15 @@ function subGnbRemove() {
 for(let i = 0; i < mobileGnb.length - 1; i++){
     mobileGnb[i].addEventListener('click',ev=>{
         ev.preventDefault();
+        const sectionInner = sectionElms[i].children[1];
 
-        // 전체 classList, active 지우기
-        for(let j = 0; j < sectionElms.length; j++){
-            sectionElms[j].classList.remove('active');
-            gnbList[j].classList.remove('on');
-            body.classList.remove('black');
-        }
+        // 섹션 전체 삭제
+        setionAllRemove();
+        
 
-        // 클릭시 해당 인덱스 active
+        // 클릭시 해당 섹션 active
         sectionElms[i].classList.add('active');
-        gnbList[i].classList.add('on');
+        sectionInner.scrollTop = '0'; // 포폴부분은 스크롤이 많으니 항상 맨위에 위치
 
         // 위치가 about이면
         if( sectionElms[i].classList.contains('about') ) {   
@@ -206,6 +195,7 @@ for(let i = 0; i < mobileGnb.length - 1; i++){
 contactBtn.addEventListener('click',(ev)=>{
     ev.preventDefault();
     contactElm.classList.add('active');
+    body.style.overflow = 'hidden'
 })
 
 for(let i = 0; i < closeBtn.length; i++) {

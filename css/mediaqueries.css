@@ -80,6 +80,8 @@
 
 /* ------------ 태블릿 ------------*/
 @media screen and (max-width:1023px) {
+    /* body {overflow: auto;} */
+
     /*---------header-----------*/
     header {
         position: fixed;
@@ -298,19 +300,21 @@
         min-height: calc(570px - 2.3%);
     }
 
-
-
     /*--------- header -----------*/
     .mobile-header  > .m-gnb-menu {
         top: 5px;
+        right:5px;
     }
 
     .mobile-header  > .m-gnb-menu > ul > li + li {
-        margin-left: 5px;
+        margin-left:0;
     }
     .mobile-header  > .m-gnb-menu > ul > li > a {
         font-size: 1.2em;
+        padding: 0 2px;
     }
+
+    
 
     /*--------- mail -----------*/
     main > .section-wrap > section {
@@ -425,6 +429,72 @@
     }
 
     /*--------- portfolio -----------*/
+    .frame {
+        padding-top: 33px;
+    }
+    
+    .frame::before, .frame::after, .frame-inner::before {
+        width: 13px;
+        height: 13px;
+    }
+
+    .frame::after {
+        left: 40px;
+    }
+
+    .frame-inner::before {
+        left: 61px;
+        top: -22px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > h4 {
+        font-size: 1.5em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
+        width: 350px;
+        height: 270px;
+    }
+
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .pf-title {
+        font-size: 2em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .light-headline {
+        margin-top: 10px;
+    }
+
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .light-headline > li {
+        font-size: 0.8em;
+        margin:3px;
+        padding: 5px 8px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .light-headline > li + li {
+        margin-left: 0;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .light-headline > li > i {
+        display: none;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .pf-desc {
+        font-size: 1em;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .triple > button {
+        font-size: 0.8em;
+        padding: 12px 20px;
+    }
+
+    
 
 
     /*--------- loading -----------*/
@@ -451,7 +521,6 @@
 
 
     /*--------- contact -----------*/
-
     .section-wrap > .contact {       
         min-width: 340px;
         height: 260px;
@@ -496,73 +565,3 @@
 
 }
 
-@media screen and (max-width:600px) {
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .half {
-        width: 60%;
-    }
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link {
-        height: 29vh;
-    }
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link > .click-message {
-        top: -19px;
-        font-size: 0.8em;
-    }
-
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
-        min-height: 223px;
-        min-width: 275px;
-    }
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area > .pf-link > img {
-        min-height: 184px;
-    }
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area {
-        width: 100%;
-    }
-    
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .pf-title {
-        font-size: 1.5em;
-    }
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .version {
-        font-size: 1.15em;
-    }
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .light-headline {
-        font-size: 0.5em;
-    }
-
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
-        font-size: 1.15em;
-    }
-
-    .frame {
-        padding-top: 25px;
-    }
-
-    .frame::before, .frame::after, .frame-inner::before {
-        width: 10px;
-        height: 10px;
-        top: 7px;
-    }
-
-    .frame::before {
-        left: 13px;
-    }
-
-    .frame::after {
-        left: 29px;
-    }
-
-    .frame-inner::before {
-        left: 45px;
-        top: -18px;
-    }
-
-
-}

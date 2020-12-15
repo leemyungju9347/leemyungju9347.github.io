@@ -232,11 +232,6 @@ header > nav > .gnb-menu > .gnb-list.on > a > .gnb-icon {
 .mobile-header  > .m-gnb-menu > ul > li:hover > a {
     color: #3B3B3B;
 }
-
-.mobile-header  > .m-gnb-menu > ul > li + li {
-    /* margin-left: 10px; */
-}
-
 .mobile-header  > .m-gnb-menu > ul > li > a {
     font-size:2em;
     color: #fff;
@@ -246,6 +241,14 @@ header > nav > .gnb-menu > .gnb-list.on > a > .gnb-icon {
 
 body.black .mobile-header > .m-gnb-menu > ul > li > a {
     color: #3B3B3B;
+}
+
+body.black .mobile-header > .m-gnb-menu > ul > li:hover {
+    background-color:#000
+}
+
+body.black .mobile-header > .m-gnb-menu > ul > li:hover > a {
+    color: #fff;
 }
 
 
