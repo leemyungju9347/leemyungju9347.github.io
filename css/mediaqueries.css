@@ -4,19 +4,13 @@
     3. 모바일 가로, 모바일 세로 : ~ 768px
 */
 
-
+/* ------------ 브라우저2 ------------*/
 @media screen and (max-width:1192px) {
-    /* body {background: magenta;} */
-
-    
-
-
     /* -----------portfolio--------------- */
     .frame {
         padding-top: 33px;
     }
     
-
     .frame::before, .frame::after, .frame-inner::before {
         width: 13px;
         height: 13px;
@@ -186,18 +180,74 @@
     }
 
     /*--------- portfolio -----------*/
+    .frame {
+        padding-top: 40px;
+    }
+
+    .frame::before, .frame::after, .frame-inner::before {
+        top: 11px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    .frame::before {
+        left:19px;
+    }
+    
+    .frame::after {
+        left: 43px;
+    }
+    .frame-inner::before {
+        left: 66px;
+        top: -29px;
+    }
+
+    .portfolio.vue > .inner {
+        padding: 50px 0 90px;
+    }
+
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list + .portfolio-list {
+        margin-top: 80px;
+    }
+
     .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
-        width: 350px;
+        width: 450px;
+        height: 350px;
+        margin-top: 0;
     }
 
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .headline > .pf-title {
-        font-size: 2.5em;
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area {
+        width: 80%;
     }
 
-    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
-        padding: 12px 20px;
-        font-size: 1.15em;
+    .portfolio > .inner > .portfolio-contents > .portfolio-list.moneyboo > .img-area {
+        margin-top: 0;
     }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .half {
+        float: unset;
+        margin:0 auto;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .left > .txt-area, 
+    .portfolio > .inner > .portfolio-contents > .right > .txt-area {
+        text-align: unset;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area {
+        margin-top: 50px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .pf-desc {
+        font-size: 1.3em;
+    }
+
+    
+
+
+
+    
 
 
 
