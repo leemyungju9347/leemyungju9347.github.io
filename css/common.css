@@ -213,13 +213,10 @@ header > nav > .gnb-menu > .gnb-list.on > a > .gnb-icon {
 
 .mobile-header  > .m-gnb-menu {
     position: absolute;
-    top: -9px;
+    top: -5px;
     right:10px;
 }
 
-.mobile-header  > .m-gnb-menu > ul {
-  
-}
 
 .mobile-header  > .m-gnb-menu > ul > li {
     display: inline-block;

@@ -245,13 +245,6 @@
         font-size: 1.3em;
     }
 
-    
-
-
-
-    
-
-
 
     /*--------- loading -----------*/
     .loading-area {
@@ -455,6 +448,14 @@
         width: 320px;
         height: 270px;
         box-shadow: 6px 6px 10px 0px #d2d2d29e;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .hackernews > .img-area > .pf-link > .pf-img {
+        background-position: left top;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .myPortfolio > .img-area > .pf-link > .pf-img {
+        background-position: -77px top;
     }
 
 
