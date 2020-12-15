@@ -452,8 +452,9 @@
     }
 
     .portfolio > .inner > .portfolio-contents > .portfolio-list > .img-area {
-        width: 350px;
+        width: 320px;
         height: 270px;
+        box-shadow: 6px 6px 10px 0px #d2d2d29e;
     }
 
 
@@ -482,6 +483,7 @@
 
     .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .pf-desc {
         font-size: 1em;
+        line-height: 22px;
     }
 
     .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button {
@@ -489,9 +491,17 @@
         padding: 12px 25px;
     }
 
+    .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .btn-box > button + button {
+        margin-left: 10px;
+    }
+
     .portfolio > .inner > .portfolio-contents > .portfolio-list > .txt-area > .triple > button {
         font-size: 0.8em;
         padding: 12px 20px;
+    }
+
+    .portfolio > .inner > .portfolio-contents > .moneyboo > .txt-area > .triple > button {
+        padding: 12px 15px;
     }
 
     

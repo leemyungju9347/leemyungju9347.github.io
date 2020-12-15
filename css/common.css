@@ -213,7 +213,7 @@ header > nav > .gnb-menu > .gnb-list.on > a > .gnb-icon {
 
 .mobile-header  > .m-gnb-menu {
     position: absolute;
-    top:-12px;
+    top: -9px;
     right:10px;
 }
 
