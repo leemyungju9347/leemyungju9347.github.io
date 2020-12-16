@@ -712,12 +712,15 @@ main > .section-wrap > .skills > .inner > .skills-list > li > .skills-more > li 
 }
 
 .portfolio > .inner > .portfolio-contents > .weather > .img-area > .pf-link > .pf-img {
-    background-image: url(../images/portfoliolist-img-globalWeather.png);
+    background-image: url(../images/portfoliolist-img-globalWeather01.png);
+    transition: 0.3s ease;
+    background-position-y:-5px;
 }
 
 .portfolio > .inner > .portfolio-contents > .weather > .img-area:hover > .pf-link > .pf-img {
-    
+    background-image: url(../images/portfoliolist-img-globalWeather-night.png);
 }
+
 
 /* ------------- 웹사이트 이미지 ----------- */
 .portfolio > .inner > .portfolio-contents > .myPortfolio > .img-area > .pf-link > .pf-img {

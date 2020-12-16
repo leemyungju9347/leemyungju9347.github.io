@@ -204,3 +204,66 @@ body.on .calc-area > .operator >  button {
   opacity: 0;
 }
 
+/* --------------mediaqueries----------------- */
+@media screen and (max-width:1023px) {
+  body {
+    padding-bottom: 50px !important;
+  }
+
+  .calc-area {
+    margin: 100px auto 0;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+  body {
+    /* padding-bottom: 0; */
+  }
+
+  .calc-area {
+    margin: 80px auto 0;
+    width: 320px;
+  }
+
+  .calc-area > .result > .reset-btn {
+    font-size: 1.5em;
+  }
+
+  .calc-area button {
+    font-size: 1.5em;
+  }
+
+  .setting-area > input[type="checkbox"] + label {
+    width: 60px;
+    height: 30px;
+  }
+
+  .setting-area > input[type="checkbox"] + label > .round {
+    width: 20px;
+    height: 20px;
+  }
+
+  .setting-area > input[type="checkbox"] + label > span {
+    top: 7px;
+    
+  }
+
+  .setting-area > input[type="checkbox"] + label > .dark {
+    right: 7px;
+    font-size: 0.9em;
+    
+  }
+
+  .setting-area > input[type="checkbox"] + label > .light {
+    left: 8px;
+    font-size: 0.8em;
+}
+
+  .setting-area > input[type="checkbox"]:checked + label > .round {
+    left:35px;
+  }
+
+  
+
+}
