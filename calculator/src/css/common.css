@@ -222,8 +222,12 @@ body.on .calc-area > .operator >  button {
   }
 
   .calc-area {
-    margin: 80px auto 0;
+    margin: 90px auto 0;
     width: 320px;
+  }
+
+  .calc-area > .result > .result-num {
+    color: #fff;
   }
 
   .calc-area > .result > .reset-btn {
@@ -234,8 +238,12 @@ body.on .calc-area > .operator >  button {
     font-size: 1.5em;
   }
 
+  .setting-area {
+    left: 40px;
+  }
+
   .setting-area > input[type="checkbox"] + label {
-    width: 60px;
+    width: 67px;
     height: 30px;
   }
 
@@ -250,18 +258,18 @@ body.on .calc-area > .operator >  button {
   }
 
   .setting-area > input[type="checkbox"] + label > .dark {
-    right: 7px;
+    right: 9px;
     font-size: 0.9em;
     
   }
 
   .setting-area > input[type="checkbox"] + label > .light {
-    left: 8px;
+    left: 10px;
     font-size: 0.8em;
 }
 
   .setting-area > input[type="checkbox"]:checked + label > .round {
-    left:35px;
+    left: 41px;
   }
 
   
