@@ -211,7 +211,11 @@ body.on .calc-area > .operator >  button {
   }
 
   .calc-area {
-    margin: 100px auto 0;
+    margin: 110px auto 0;
+  }
+
+  .setting-area {
+    top: 30px;
   }
   
 }
