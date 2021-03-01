@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" class="img_svg">
+                                                            <defs>
+                                                                <path id="mainEventArrowRight" d="M28 20L15 33l-1.4-1.4L25.2 20 13.6 8.4 15 7z"/>
+                                                            </defs>
+                                                            <g fill="none" fill-rule="evenodd">
+                                                                <path d="M0 0h40v40H0z"/>
+                                                                <use fill="#000" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mainEventArrowRight"/>
+                                                            </g>
+                                                        </svg>

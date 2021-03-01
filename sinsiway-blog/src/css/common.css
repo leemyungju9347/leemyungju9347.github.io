@@ -1,0 +1,459 @@
+/* -------------- common -------------------- */
+.p-date-info {
+    margin-top: 10px;
+}
+.p-date-info > span {
+    color: #848484;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.itemFadeUp {
+    -webkit-animation: itemFadeUpAni .7s ease-in;
+    animation: itemFadeUpAni .7s ease-in
+}
+
+@-webkit-keyframes itemFadeUpAni {
+    from {
+        transform: translate3d(0,50px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+/* -------------- wrap -------------------- */
+.wrap {}
+
+
+/* -------------- header -------------------- */
+header {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header > .header-inner {
+    height: 90px;
+    position: relative;
+    border-bottom: 1px solid lightgrey;
+}
+
+header > .header-inner > .main-logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+header > .header-inner > .utils-btn-area {
+    position: absolute;
+    right: 43px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+header > .header-inner > .utils-btn-area > .search-btn > i {
+    color: #949494;
+    font-size: 1.4em;
+}
+header > .header-inner > .utils-btn-area >.search-btn > span {
+    display: none;
+}
+
+header > .header-inner > .utils-btn-area > .nav-btn-box {
+    margin-left:20px;
+    position: relative;
+}
+
+header > .header-inner > .utils-btn-area > .nav-btn-box > a {
+    display: block;
+    padding: 5px;
+}
+
+header > .header-inner > .utils-btn-area > .nav-btn-box > a > span {
+    width:25px;
+    height: 3px;
+    background-color: #949494;
+    display: block;
+    
+}
+
+header > .header-inner > .utils-btn-area > .nav-btn-box > a > span + span {
+    margin-top:5px;
+}
+
+/* -------- utils-area -------- */
+.navMenu {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.navMenu.active {
+    display: block;
+}
+
+.utils-area > .nav-inner {
+    z-index:1000;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+}
+.utils-area > .nav-inner > .nav-header {
+    height: 90px;
+    position: relative;
+}
+.utils-area > .nav-inner > .nav-header > .nav-logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.utils-area > .nav-inner > .nav-header > .close-btn {
+    position: absolute;
+    right: 33px;
+    top: 22px;
+
+}
+.utils-area > .nav-inner > .nav-header > .close-btn > span {
+    display: block;
+    width: 4px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    background-color: #949494;
+}
+
+.utils-area > .nav-inner > .nav-header > .close-btn > span:first-child {
+    transform: rotate(-45deg);
+
+}
+
+.utils-area > .nav-inner > .nav-header > .close-btn > span:last-child {
+    transform: rotate(45deg);
+}
+
+.utils-area > .nav-inner > nav {
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.utils-area > .nav-inner > nav > .nav-list {}
+.utils-area > .nav-inner > nav > .nav-list > li {
+    font-size:1.2em;
+}
+
+.utils-area > .nav-inner > nav > .nav-list > li + li {
+    margin-top: 20px;
+}
+
+/* -------------- main -------------------- */
+main {
+    width: 75%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+main > .main-inner {}
+main > .main-inner > section {}
+
+section + section {
+    margin-top: 120px;
+    padding-top: 80px;
+    border-top: 1px solid lightgrey;
+}
+section > .section-inner {
+    text-align: center;
+}
+
+section > .section-inner > .sc-title {
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    display:inline-block;
+    -webkit-animation: itemFadeUpAni .7s ease-in;
+    animation: itemFadeUpAni .7s ease-in;
+}
+
+
+@-webkit-keyframes itemFadeUpAni {
+    from {
+        transform: translate3d(0,50px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+section > .section-inner > .sc-title::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height:3px;
+    left: 50%;
+    top:-13px;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #087CE2, #22BD92);
+}
+
+section > .section-inner > .post-list {
+    margin-top: 80px;
+    display: grid;
+    grid-gap:5rem;
+    position: relative;
+}
+
+section > .section-inner > .post-list > .post-item {
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(0);
+    box-shadow: 7px 8px 9px 0px #e0e0e0cc;
+    /* background-color: #fff; */
+    -webkit-animation: itemFadeUpAni .7s ease-in;
+    animation: itemFadeUpAni .7s ease-in;
+    border-radius: 10px;
+}
+
+
+@-webkit-keyframes itemFadeUpAni {
+    from {
+        transform: translate3d(0,50px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+section > .section-inner > .post-list > .post-item:hover {
+    transform: translateY(-17px);
+    box-shadow: 0px 10px 9px 0px #e0e0e0cc;
+}
+
+section > .section-inner > .post-list > .post-item > .post-link {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+section > .section-inner > .post-list > .post-item > .post-link > .thumbnail-area > .thumbnail {
+    width: 100%;
+    
+    
+}
+
+section > .section-inner > .post-list > .post-item > .post-link > .post-txt-area {
+    padding: 20px;
+    /* background-color: #fff; */
+}
+
+section > .section-inner > .post-list > .post-item > .post-link > .post-txt-area > .p-subject {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+section > .section-inner > .post-list > .post-item > .post-link > .post-txt-area  > .p-desc {
+    font-weight: normal;
+    font-size: 0.9em;
+    height: 100%;
+}
+
+section > .section-inner > .post-list > .post-item > .post-link > .read-more-btn {
+    position:absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #087CE2, #22BD92);
+    padding: 15px 30px 18px;
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1000;
+}
+
+
+/* -------- section01, section02  -------- */
+.sc-main > .section-inner {
+    padding: 0 20px;
+}
+
+.sc-main > .section-inner > .post-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+    grid-auto-rows:500px;
+}
+
+.sc-main > .section-inner > .post-list > .post-item > .post-link > .post-txt-area {
+    padding: 20px;
+}
+
+.sc-main > .section-inner > .post-list > .post-item > .post-link > .post-txt-area > .p-category {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #087CE2, #22BD92);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sc-main > .section-inner > .post-list > .post-item > .post-link > .post-txt-area > .p-subject {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* -------- sc1 #inside -------- */
+#inside > .section-inner > .post-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows:450px;
+}
+
+
+/* -------- sc2 #tip -------- */
+#tip > .section-inner > .post-list {
+    display: block;
+    text-align: left;
+}
+
+#tip > .section-inner > .post-list > .post-item > .post-link {
+    display:flex;
+}
+
+#tip > .section-inner > .post-list > .post-item > .post-link > .thumbnail-area > .thumbnail {
+    height: 100%;
+}
+
+#tip > .section-inner > .post-list > .post-item > .post-link > .post-txt-area > .p-desc {
+    margin-top:35px;
+}
+
+
+/* -------- section05,section06 -------- */
+.sc-cols > .section-inner > .post-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:3rem; 
+}
+
+.sc-cols > .section-inner > .post-list > .post-item {
+    background-color:unset;
+    box-shadow: unset;
+    border-radius: unset;
+}
+
+.sc-cols > .section-inner > .post-list > .post-item:hover {
+    box-shadow: unset;
+}
+
+.sc-cols > .section-inner > .post-list > .post-item > .post-link {
+    background-color: unset;
+    overflow: unset;
+    border-radius: unset;
+}
+
+.sc-cols > .section-inner > .post-list > .post-item > .post-link > .post-txt-area {
+    padding: 10px 0;
+}
+
+.sc-cols > .section-inner > .post-list > .post-item > .post-link > .post-txt-area > .p-subject {
+    font-size: 0.8em;
+}
+
+
+/* -------------- footer -------------------- */
+footer {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid lightgrey;
+    
+}
+
+footer > .footer-inner {
+    padding: 40px 25px;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+footer > .footer-inner > .footer-top {
+    display: flex;
+    justify-content:space-between
+}
+
+footer > .footer-inner > .footer-top > .companyLink-wrap {
+}
+
+footer > .footer-inner > .footer-top > .site-selectBox {
+    position: relative
+
+}
+
+footer > .footer-inner > .footer-top > .site-selectBox > select  {
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    font-weight: normal;
+    
+}
+
+footer > .footer-inner > .footer-top > .site-selectBox > .arrow-icon {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+footer > .footer-inner > .footer-bottom {
+    margin-top: 30px;
+    display: none;
+}
+
+footer > .footer-inner > .footer-bottom > .snsLink-area {}
+footer > .footer-inner > .footer-bottom > .snsLink-area > li {
+    display: inline-block;
+}
+
+footer > .footer-inner > .footer-bottom > .snsLink-area > li + li {
+    margin-left: 10px;
+}
+
+footer > .footer-inner > .footer-bottom > .snsLink-area > li > a {
+    display:block;
+}
+
+footer > .footer-inner > .footer-bottom > .snsLink-area > li > a > i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    background: url('../images/ico_sns_type1.png') no-repeat;
+}
+
+footer > .footer-inner > .footer-bottom > .snsLink-area > li.facebook > a > i {
+}
+
+footer > .footer-inner > .footer-bottom > .snsLink-area > li.instagram > a > i {}
+footer > .footer-inner > .footer-bottom > .snsLink-area > li.youTube > a > i {}
+footer > .footer-inner > .footer-bottom > .snsLink-area > li.email > a > i {}
+
+footer > .footer-inner > .footer-bottom > .snsLink-area > li > a > span {
+    display: none;
+}

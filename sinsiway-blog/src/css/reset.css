@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-weight: bold;
+    color: #3B3B3B;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #F8F9FA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, 
+thead, tbody, tfoot, tr, td, caption,ul {
+	margin:0;
+	padding:0;
+}
+
+input,
+select,
+textarea {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	resize: none;
+}
+
+select {
+    webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+button,input,select {
+	font-weight: bold;
+	border:transparent;
+	background-color: transparent;
+    font-family: inherit;
+    color: inherit;
+}
+
+button {
+	font-size: 90%;
+	margin: 0;
+	cursor: pointer;
+	padding: 0;
+}
+
+button:focus,
+input:focus,
+select:focus {
+	outline: none;
+	outline-offset:unset;
+}
+
+
+a{
+	text-decoration: none;
+	color: #3B3B3B;
+	cursor: pointer;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
