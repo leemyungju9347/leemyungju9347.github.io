@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,
 body {
 	height: 100%;
@@ -16,7 +23,6 @@ body {
 	vertical-align: baseline;
 	font-weight: bold;
     background-color: #B3FFDE;
-	/* color: #666666; */
     font-family: 'Wemakeprice-Bold';
     background-color: #63e6be;
     /* background-color: #6551CC; */
@@ -24,6 +30,7 @@ body {
     /* background-color: gainsboro; */
     background: linear-gradient(-45deg, #f3f5f0 50%, #dfe8eb 50%);
     color: #3B3B3B;
+	font-family: 'Y_Spotlight';
 }
 
 /* h1{font-weight: lighter;} */
@@ -45,6 +52,7 @@ textarea {
 	margin: 0;
 	background: transparent;
 	resize: none;
+	color: inherit;
 }
 
 ul,li {

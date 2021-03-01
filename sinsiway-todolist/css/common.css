@@ -33,37 +33,38 @@
 
 /* ----------- todoList ----------------  */
 .wrap {
-    width:50%;
     margin:120px auto 0;
-    width: 400px;
+    width: 500px;
 }
 
-h1 {
+.todo-title {
     text-align: center;
+    font-size: 3em;
 }
 
 /* ----------- todo-form ----------------  */
 .todo-form {
-    margin-top: 25px;
     width: 80%;
     position: relative;
-    margin:40px auto 0;
+    margin:60px auto 0;
 }
 
 .todo-form > .todo-input {
     border-bottom: 3px solid #000;
     width: 100%;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    font-size: 1.3em;
 }
 
 .todo-form > .todo-input::placeholder {
-    color: #000;
-
+    color: #3B3B3B;
 }
 
 .todo-form > .todo-btn {
     position: absolute;
-    right: 0;
+    right: 6px;
+    font-size: 1.2em;
+    top: 2px;
 }
 
 
@@ -75,6 +76,7 @@ h1 {
 .todo-form > .select-btn-box > .select-btn {
     padding: 5px 10px;
     position: relative;
+    font-size:1.5em;
 }
 
 .todo-form > .select-btn-box > .select-btn.check {
@@ -84,10 +86,10 @@ h1 {
 .todo-form > .select-btn-box > .select-btn + .select-btn::before {
     content: '';
     position: absolute;
-    top: 7px;
+    top: 12px;
     left: -15px;
     width: 2px;
-    height: 12px;
+    height: 18px;
     background-color: #898989;
 }
 
@@ -97,10 +99,10 @@ h1 {
 
 /* -------------- todo-container ---------------- */
 .todo-container {
-    margin-top:50px;
+    margin-top:70px;
     position: relative;
 }
-.todo-container > ul {}
+
 .todo-container > ul > li {
     background-color: #fff;
     padding: 10px 20px;
@@ -108,6 +110,7 @@ h1 {
     border-radius: 10px;
     transition: all 0.5s ease;
     box-shadow: 4px 4px #b4b4b45e;
+    font-size: 1.4em;
 }
 
 
@@ -131,16 +134,11 @@ h1 {
     color: #a9a9a9;
 }
 
-.todo-container > ul > li.finished > button {
-    /* pointer-events: none; */
-}
-
-
 
 .todo-container > ul > li.finished > span::before {
     content: '';
     position: absolute;
-    top: 7px;
+    top: 11px;
     left: -1px;
     width: 110%;
     height: 3px;
@@ -156,11 +154,11 @@ h1 {
 
 .todo-container > ul > li > .finished-btn {
     color: #5563a2;
-    right: 64px;
+    right: 75px;
 }
 
 .todo-container > ul > li > .edit-btn {
-    right: 38px;
+    right: 43px;
     color: #248574;
 }
 
@@ -170,11 +168,10 @@ h1 {
 }
 
 .todo-container > .all-delete-btn {
-    font-size: 0.7em;
     color:#565656;
     position: absolute;
     right: 4px;
-    top: -27px;
+    top: -36px;
     display: none;
 }
 
@@ -190,6 +187,6 @@ h1 {
     text-align: center;
     margin-top: 90px;
     color: #929292;
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 
