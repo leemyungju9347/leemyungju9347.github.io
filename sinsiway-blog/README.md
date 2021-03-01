@@ -16,4 +16,7 @@ https://leemyungju9347.github.io/sinsiway-blog/index.html
 - [x] Vanilla JavaScript 
 
 ## 👩🏻‍💻 결과 화면
+<img src="https://github.com/leemyungju9347/leemyungju9347.github.io/blob/master/sinsiway-blog/src/images/sinsiway01.png">
+<img src="https://github.com/leemyungju9347/leemyungju9347.github.io/blob/master/sinsiway-blog/src/images/sinsiway02.png">
+<img src="https://github.com/leemyungju9347/leemyungju9347.github.io/blob/master/sinsiway-blog/src/images/sinsiway03.png">
 
