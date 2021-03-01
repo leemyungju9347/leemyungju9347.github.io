@@ -1,0 +1,195 @@
+/* ----------- common ----------------  */
+.fa-check,
+.fa-times,
+.fa-pencil-alt,
+.fa-trash-alt {
+    pointer-events: none;
+}
+
+
+.appear {
+    -webkit-animation: listOn .5s ease-out both;
+    animation: listOn .5s ease-out both;
+}
+
+@-webkit-keyframes listOn {
+    0%{
+        transform:translateX(50px);
+        opacity: 0;
+      }
+
+      100%{
+          transform: translateX(0);
+          opacity: 1;
+      }
+}
+
+.fall {
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+
+
+/* ----------- todoList ----------------  */
+.wrap {
+    width:50%;
+    margin:120px auto 0;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* ----------- todo-form ----------------  */
+.todo-form {
+    margin-top: 25px;
+    width: 80%;
+    position: relative;
+    margin:40px auto 0;
+}
+
+.todo-form > .todo-input {
+    border-bottom: 3px solid #000;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.todo-form > .todo-input::placeholder {
+    color: #000;
+
+}
+
+.todo-form > .todo-btn {
+    position: absolute;
+    right: 0;
+}
+
+
+.todo-form > .select-btn-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.todo-form > .select-btn-box > .select-btn {
+    padding: 5px 10px;
+    position: relative;
+}
+
+.todo-form > .select-btn-box > .select-btn.check {
+    color: #5563a2;
+}
+
+.todo-form > .select-btn-box > .select-btn + .select-btn::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -15px;
+    width: 2px;
+    height: 12px;
+    background-color: #898989;
+}
+
+.todo-form > .select-btn-box > .select-btn + .select-btn  {
+    margin-left: 25px;
+}
+
+/* -------------- todo-container ---------------- */
+.todo-container {
+    margin-top:50px;
+    position: relative;
+}
+.todo-container > ul {}
+.todo-container > ul > li {
+    background-color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 4px 4px #b4b4b45e;
+}
+
+
+.todo-container > ul > li.finished {
+    opacity: 0.7;
+}
+
+
+
+.todo-container > ul > li + li {
+    margin-top: 20px;
+
+}
+
+.todo-container > ul > li > span {
+    position: relative;
+    font-size: 0.9em;
+}
+
+.todo-container > ul > li.finished > span {
+    color: #a9a9a9;
+}
+
+.todo-container > ul > li.finished > button {
+    /* pointer-events: none; */
+}
+
+
+
+.todo-container > ul > li.finished > span::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -1px;
+    width: 110%;
+    height: 3px;
+    background-color: #5563a2;
+
+}
+
+.todo-container > ul > li > button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.todo-container > ul > li > .finished-btn {
+    color: #5563a2;
+    right: 64px;
+}
+
+.todo-container > ul > li > .edit-btn {
+    right: 38px;
+    color: #248574;
+}
+
+.todo-container > ul > li > .delete-btn {
+    color: #ff3d48;
+    right: 17px;
+}
+
+.todo-container > .all-delete-btn {
+    font-size: 0.7em;
+    color:#565656;
+    position: absolute;
+    right: 4px;
+    top: -27px;
+    display: none;
+}
+
+.todo-container > .all-delete-btn.on {
+    display: block;
+}
+
+.todo-container > .all-delete-btn > i {
+    margin-right: 8px;
+}
+
+.todo-empty {
+    text-align: center;
+    margin-top: 90px;
+    color: #929292;
+    font-size: 0.9em;
+}
+

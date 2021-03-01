@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Wemakeprice-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-weight: bold;
+    background-color: #B3FFDE;
+	/* color: #666666; */
+    font-family: 'Wemakeprice-Bold';
+    background-color: #63e6be;
+    /* background-color: #6551CC; */
+    background-color: #F5CF5F;
+    /* background-color: gainsboro; */
+    background: linear-gradient(-45deg, #f3f5f0 50%, #dfe8eb 50%);
+    color: #3B3B3B;
+}
+
+/* h1{font-weight: lighter;} */
+h1, h2, h3, h4, h5, h6 {
+    color: #221c42;
+}
+
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, 
+thead, tbody, tfoot, tr, td, caption,ul {
+	margin:0;
+	padding:0;
+}
+
+input,
+select,
+textarea {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	resize: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+button,input {
+	font-weight: bold;
+	border:transparent;
+	background-color: transparent;
+    font-family: inherit;
+
+}
+
+button {
+	font-family: inherit;
+	font-size: 90%;
+	margin: 0;
+	cursor: pointer;
+	padding: 0;
+    color: inherit;
+}
+
+button:focus,
+input:focus,
+select:focus {
+	outline: none;
+	outline-offset:unset;
+}
+
+
+
+a{
+	text-decoration: none;
+	color: #666666;
+	cursor: pointer;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}

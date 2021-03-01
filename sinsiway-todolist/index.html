@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>신시웨이 - To Do List</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1>To-do list</h1>
+        <!-- 제출 폼 -->
+        <form class="todo-form" action="">
+            <input class="todo-input" type="text" placeholder="할일을 입력해주세요.">
+            <button class="todo-btn" type="submit"><i class="fas fa-plus"></i></button>
+            <div class="select-btn-box">
+                <button class="select-btn check" type="button" value="all">전체</button>
+                <button class="select-btn" type="button" value="finished">완료</button>
+                <button class="select-btn" type="button" value="unfinished">미완료</button>
+            </div>
+        </form>
+        <!-- 투두리스트 -->
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+            <button class="all-delete-btn">
+                <i class="fas fa-trash-alt"></i>전체삭제
+            </button>
+        </div>
+        <div class="todo-empty">
+            📚 할일을 채워주세요. 
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
