@@ -19,6 +19,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
 }
 
+em {
+	font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, 
 thead, tbody, tfoot, tr, td, caption,ul {
 	margin:0;
@@ -33,6 +37,7 @@ textarea {
 	margin: 0;
 	background: transparent;
 	resize: none;
+	font-family: inherit;
 }
 
 select {
@@ -45,7 +50,7 @@ ul,li {
     list-style: none;
 }
 
-button,input,select {
+button,input,select{
 	font-weight: bold;
 	border:transparent;
 	background-color: transparent;
@@ -62,7 +67,8 @@ button {
 
 button:focus,
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
 	outline: none;
 	outline-offset:unset;
 }

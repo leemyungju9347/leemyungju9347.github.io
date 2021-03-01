@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/postLIst.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>신시웨이 - 블로그 리뉴얼</title>
 </head>
 <body>
-    <div class="blogList-wrap">
-        <div class="blogList-inner">
+    <div class="postList-wrap">
+        <header></header>
+        <div class="utils-area navMenu"></div>
+        <div class="nav-dimmed"></div>
+        <div class="postList-inner">
             <h2>신시웨이 인사이드</h2>
             <ul class="posting-list">
                 <!-- 첫번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
                             <img src="./src/images/postList01.png">
                         </div>
@@ -25,7 +32,7 @@
                 </li>
                 <!-- 두번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
                             <img src="./src/images/postList02.jfif">
                         </div>
@@ -37,7 +44,7 @@
                 </li>
                 <!-- 세번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
                             <img src="./src/images/postList01.png">
                         </div>
@@ -49,7 +56,7 @@
                 </li>
                 <!-- 네번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
                             <img src="./src/images/postList01.png">
                         </div>
@@ -61,7 +68,7 @@
                 </li>
                 <!-- 다섯번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
                             <img src="./src/images/postList03.png">
                         </div>
@@ -73,9 +80,9 @@
                 </li>
                 <!-- 여섯번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
-                            <img src="./src/images/postList04.png">
+                            <img src="./src/images/postList04.jfif">
                         </div>
                         <div class="txt-area">
                             <p>신시웨이, 서울시 일·생활균형 우수기업(여성 맞춤형) 표창</p>
@@ -85,7 +92,7 @@
                 </li>
                 <!-- 일곱번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
                             <img src="./src/images/postList01.png">
                         </div>
@@ -97,7 +104,7 @@
                 </li>
                 <!-- 여덟번째 리스트 -->
                 <li>
-                    <a href="">
+                    <a href="./blogPost-detail.html">
                         <div class="img-area">
                             <img src="./src/images/postList05.png">
                         </div>
@@ -108,7 +115,22 @@
                     </a>
                 </li>
             </ul>
+            <div class="list-paging">
+                <a href="" class="prev-page pageLink">
+                    <i class="fas fa-angle-double-left"></i>
+                    <span>이전</span>
+                </a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="" class="next-page pageLink">
+                    <span>다음</span>
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </div>
         </div>
+        <footer></footer>
     </div>
+    <script src="./src/js/common.js"></script>
 </body>
 </html>

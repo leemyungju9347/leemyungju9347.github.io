@@ -1,0 +1,109 @@
+/* -------------- postList-wrap ----------------- */
+.postList-wrap > .postList-inner {
+    width: 75%;
+    padding: 70px 0 90px;
+    margin:0 auto;
+}
+
+.postList-wrap > .postList-inner > h2 {
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to right, #087CE2, #22BD92);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: itemFadeUpAni .7s ease-in;
+    animation: itemFadeUpAni .7s ease-in
+}
+
+
+.postList-wrap > .postList-inner > .posting-list {
+    display: grid;
+    grid-gap:2rem;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    -webkit-animation: itemFadeUpAni .7s ease-in;
+    animation: itemFadeUpAni .7s ease-in
+}
+
+
+@-webkit-keyframes itemFadeUpAni {
+    from {
+        transform: translate3d(0,50px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
+.postList-wrap > .postList-inner > .posting-list > li {
+    transition: all 0.5s ease;
+}
+
+.postList-wrap > .postList-inner > .posting-list > li:hover {
+    transform: translateY(-20px);
+}
+
+.postList-wrap > .postList-inner > .posting-list > li > a > .img-area {
+    height: 150px;
+    overflow: hidden;
+}
+
+.postList-wrap > .postList-inner > .posting-list > li > a > .img-area > img {
+    width: 100%;
+    height: 100%;
+}
+
+.postList-wrap > .postList-inner > .posting-list > li > a > .txt-area {
+    margin-top: 20px;
+}
+
+.postList-wrap > .postList-inner > .posting-list > li > a > .txt-area > p {
+    font-size: 0.9em;
+}
+
+.postList-wrap > .postList-inner > .posting-list > li > a > .txt-area > .posting-date {
+    font-size: 0.8em;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #848484;
+}
+
+/* -------------- list-paging ----------------- */
+.list-paging {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.list-paging > a {
+    display: inline-block;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.list-paging > a:hover {
+    background: linear-gradient(to right, #087CE2, #22BD92);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list-paging > a.on {
+    text-decoration: underline;
+}
+
+.list-paging > a + a {
+    margin-left: 5px;
+}
+
+.prev-page > i {
+    margin-right: 5px;
+}
+
+.next-page > i {
+    margin-left: 5px;
+}

@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/detail.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>신시웨이 - 블로그 리뉴얼</title>
 </head>
 <body>
     <div class="detail-wrap">
         <header></header>
+        <div class="utils-area navMenu"></div>
+        <div class="nav-dimmed"></div>
         <main>
             <div class="main-inner">
                 <!-- 블로그 제목 -->
@@ -23,10 +29,13 @@
                                 <span class="time">17:23</span>
                             </p>
                         </div>
-                        <div class="utils-btn">
-                            <button class="list-btn"><span>좋아요 버튼</span></button>
-                            <button class="comment-btn"><span>댓글 보기 버튼</span></button>
-                        </div>
+                        <ul class="keyword-hashtag">
+                            <li># 개인안심번호</li>
+                            <li># 코로나</li>
+                            <li># 보안</li>
+                            <li># QR 체크인</li>
+                            <li># 정보보호</li>
+                        </ul>
                     </div>
                 </section>
                 <!-- 블로그 본문 -->
@@ -41,13 +50,13 @@
                             <p>우리의 생활과 밀접한 사이버위협은 사람들이 주로 이용하는 MS-Word, Excel, PowerPoint의 Macro에 악성 코드를 삽입하여 이메일을 통해 전파하거나, 웹사이트에서 다운로드하도록 유도하여 악성 코드를 감염시킵니다.</p>
                             <div class="content-img">
                                 <img src="./src/images/postMain02.png" alt="">
-                                <span>보건당국을 위장한 피싱메일 [출처: Carbon Black]</span>
+                                <span class="post-source">보건당국을 위장한 피싱메일 [출처: Carbon Black]</span>
                             </div>
                             <p>기업이나 학교에 설치된 VPN의 보안이 취약한 경우, 인터넷상에서 민감한 개인정보가 유출될 위험이 높아지며, 실제로 사이버범죄자가 온라인 강의실을 침투하여 유해정보를 노출 시 키거나, 영상정보를 유출하는 사고 등이 발생하기도 하였습니다. 그리고 재택근무로 원격근무를 하는 기업이 증가하면서 물리 보안의 취약성을 심화시키고 있으며, 코로나바이러스 감염 및 확산을 방지하기 위해 공급업체등의 방문을 금지시켜 점검이나 서비스 등을 원활하게 지원을 받지 못하는 경우가 발생하고 있습니다.</p>
                             <div class="table-area">
                                 <table>
                                     <tr>
-                                        <td>주요기반시설 보호 활동</td>
+                                        <th>주요기반시설 보호 활동</th>
                                         <td>
                                             <p>• 대응조정관을 지정하고, 책임이 있는 직원 지정</p>
                                             <p>• 공식적인 직원 및 작업장 보호 서비스 구현</p>
@@ -61,7 +70,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>공급망 보호 활동</td>
+                                        <th>공급망 보호 활동</th>
                                         <td>
                                             <p>• 코로나19로 운송 물류 및 국제적 제조산업 붕괴가 공급망에 미치는 잠재적 영향 평가</p>
                                             <p>• 위기상황 지속에 따른 공급망이 겪어야 할 문제점 검토</p>
@@ -70,7 +79,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>조직을 위한 사이버보안</td>
+                                        <th>조직을 위한 사이버보안</th>
                                         <td>
                                             <p>
                                                 • 원격접근시스템에 대한 보안성 확보
@@ -86,7 +95,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>직원 및 고객을 위한 사이버보안 활동</td>
+                                        <th>직원 및 고객을 위한 사이버보안 활동</th>
                                         <td>
                                             <p>• 광고성 유도 이메일이나 첨부화일의 부주의한 클릭 방지</p>
                                             <p>• 이메일에 개인정보나 금융정보를 노출하지 않도록 주의하고, 이러한 정보를 노리는 이메일 광고에 응답하지 않음</p>
@@ -96,7 +105,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <span>출처 : CISA의 코로나19 관련 사이버위협에 대응하기 위한 가이드 / CISA, CISA INSIGHTS Risk Management for Novel</span>
+                                <span class="post-source">출처 : CISA의 코로나19 관련 사이버위협에 대응하기 위한 가이드 / CISA, CISA INSIGHTS Risk Management for Novel</span>
                             </div>
                             <b>개인의 정보를 위협하는 수기출입명부</b>
                             <p>
@@ -107,7 +116,7 @@
                                 <blockquote>
                                     (사례2) 󰋪󰋪씨는 다중이용시설을 방문한 후 수차례 홍보 문자메시지를 받았다. 방역에 협조하기 위해 제공한 휴대전화번호가 영리 목적으로 이용된 셈이다.
                                 </blockquote>
-                                <span>출처 : 개인정보위원회 보도자료(19일부터 수기명부에 전화번호 대신 개인안심번호 쓰세요, '21.02.19)</span>
+                                <span class="post-source">출처 : 개인정보위원회 보도자료(19일부터 수기명부에 전화번호 대신 개인안심번호 쓰세요, '21.02.19)</span>
                             </p>
                             <b>공익데이터의 중심 ‘코드포코리아'</b>
                             <p>코드포코리아는 2020년 3월 ‘코로나19 공공데이터 공동대응’으로 17명 남짓한 사람들과 함께 활동을 시작하였으며, 공적마스크와 관련된 활동 등을 진행하였고 현재는 시빅해커 또는 공익데이터 운동을 하는 시민 네트쿼크의 중심 역할을 수행하고 있습니다.</p>
@@ -116,14 +125,14 @@
                             개인정보위원회는 9개의 제안 중 'QR 코드 발급 시 아래 한글과 숫자 조합의 문자 발급’ 관심을 갖으면서 코드포코리아와의 용역 계약을 통해 개발을 진행 하려고 하였으나 ‘코드포코리아’ 회원 7명의 재능 기부(아이디어, 기술력)와 QR코드 발급 기관(카카오, 네이버, PASS) 그리고 정부의 협업을 통해 ‘개인안심번호’가 탄생하게 되었다.</p>
                             <div class="content-img">
                                 <img src="./src/images/postMain03.png" alt="">
-                                <span>출처 : 개인정보위원회 보도자료(19일부터 수기명부에 전화번호 대신 개인안심번호 쓰세요, '21.02.19 )</span>
+                                <span class="post-source">출처 : 개인정보위원회 보도자료(19일부터 수기명부에 전화번호 대신 개인안심번호 쓰세요, '21.02.19 )</span>
                             </div>
                             <b>‘개인안심번호’란?</b>
                             <p>정부는 휴대전화번호 유출 및 오·남용을 원천적으로 차단하고 개인정보 유출을 방지 하기 위해 2월 19일부터 개인안심번호를 도입하였으며 숫자 4자리와 한글 2자리로 구성된 총 6자의 고유번호로 네이버·카카오·패스의 QR체크인 화면에서 손쉽게 발급 받을 수 있으며, 발급받은 개인안심번호는 수기명부에 휴대전화번호 대신 개인안심번호를 기재 하면 됩니다. <br>
                             개인안심번호는 휴대전화번호를 무작위로 변환한 문자열로 해당 번호만으로는 문자메시지 발송이 불가능 하기 때문에 명부가 유출 되더라도 개인정보가 오남용 될 수 없으며 지난해 이태원 클럽 집단 감염의 경우 명부 상 인원 4,961명 중 41%(2.032명)만 연락이 가능 했던점과 ‘전국 다중이용시설 3만 2천여 개소에 대한 출입명부 관리실태 점검 결과(‘20, 9)’ 수기출입명부 사용율이 42.5%라는 점을 비추어 볼 때 이번 개인안심번호 도입 효과는 상당히 클 것으로 예상 됩니다.</p>
                             <div class="content-img">
                                 <img src="./src/images/postMain04.png" alt="">
-                                <span>출처 : 개인정보위원회 보도자료(19일부터 수기명부에 전화번호 대신 개인안심번호 쓰세요, '21.02.19 )</span>
+                                <span class="post-source">출처 : 개인정보위원회 보도자료(19일부터 수기명부에 전화번호 대신 개인안심번호 쓰세요, '21.02.19 )</span>
                             </div>
                             <b>‘개인안심번호’ 도입 Q&A</b>
                             <ol class="content-qaList">
@@ -163,14 +172,13 @@
                                     <blockquote>확진자 발생 시, 방역당국에서만 개인안심번호를 휴대전화번호로 변환합니다.</blockquote>
                                 </li>
                             </ol>
-                            <blockquote>
+                            <div class="references">
                                 <span>출처 및 참고 자료</span>
                                 <p>• KISA REPORT 2020 vol.5</p>
-                                <p>• 코드포코리아 위키 (개인안심번호,https://codefor.kr/wiki/%EA%B0%9C%EC%9D%B8%EC%95%88%EC%8B%AC%EB%B2%88%ED%98%B8)</p>
+                                <p>• 코드포코리아 위키 </p>
                                 <p>• 개인정보위원회 보도자료(19일부터 수기명부에 전화번호 대신 개인안심번호 쓰세요, '21.02.19)</p>
-                            </blockquote>
+                            </div>
                             <p class="writer">기획. 프리세일즈·마케팅팀 | 박병민</p>
-                            <div class="mainContent-btn-area"></div>
                         </div>
                     </div>
                 </section>
@@ -183,7 +191,7 @@
                         <li>
                             <a href="">
                                 <div class="thumb-img">
-                                    <img src="" alt="">
+                                    <img src="./src/images/section01-02.png" alt="">
                                 </div>
                                 <div class="thumb-txt">
                                     <p class="t-title">4세대 암호 기술 “동형암호”</p>
@@ -195,7 +203,7 @@
                         <li>
                             <a href="">
                                 <div class="thumb-img">
-                                    <img src="" alt="">
+                                    <img src="./src/images/section01-03.png" alt="">
                                 </div>
                                 <div class="thumb-txt">
                                     <p class="t-title">본인신용정보관리업(마이데이터) 본 허가 및 주요 서비스</p>
@@ -207,7 +215,7 @@
                         <li>
                             <a href="">
                                 <div class="thumb-img">
-                                    <img src="" alt="">
+                                    <img src="./src/images/section01-04.png" alt="">
                                 </div>
                                 <div class="thumb-txt">
                                     <p class="t-title">개인정보 유출•노출 사고, 조치 사항 및 관련법 위반 행정처분 사례</p>
@@ -219,7 +227,7 @@
                         <li>
                             <a href="">
                                 <div class="thumb-img">
-                                    <img src="" alt="">
+                                    <img src="./src/images/postMain05.png" alt="">
                                 </div>
                                 <div class="thumb-txt">
                                     <p class="t-title">Sudo 권한 획득 취약점CVE-2021-3156(Baron Samedit)</p>
@@ -235,43 +243,27 @@
                 <section class="comment">
                     <div class="section-inner">
                         <button class="cmt-count">댓글 <span>0</span>개</button>
-                        <div>
-                            <input class="name" type="text" placeholder="이름">
-                            <input class="password" type="password" placeholder="비밀번호">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea>
+                        <form class="comment-form">
+                            <input class="name-input" type="text" placeholder="이름">
+                            <input class="password-input" type="password" placeholder="비밀번호">
+                            <textarea name="" id="" cols="120" rows="7" placeholder="댓글을 입력해주세요."></textarea>
                             <div class="check-box">
+                                <input class="check-input" type="checkbox" name="commentCheck">
                                 <label>
-                                    <input type="checkbox" name="cmtCheck" value="비밀글">
+                                    <span>
+                                        <i class="fas fa-check"></i>
+                                    </span> 비밀글
                                 </label>
                             </div>
-                            <button type="submit" class="submit-btn">댓글 남기기</button>
-                        </div>
+                            <button type="submit" class="submit-btn">댓글 작성</button>
+                        </form>
                     </div>
                 </section>
             </div>
         </main>
-        <div class="paging-area">
-            <a class="prev-page" href="">
-                <i></i>
-                <span>이전</span>
-            </a>
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
-            <a href="">6</a>
-            <a href="">7</a>
-            <a href="" class="ellipsis">
-                <span>···</span>
-            </a>
-            <a href="" class="last-page">67</a>
-            <a class="next-page" href="">
-                <i></i>
-                <span>다음</span>
-            </a>
-        </div>
+        <footer></footer>
     </div>
-    <script src="./src/js/header.js"></script>
+    <script src="./src/js/common.js"></script>
+    <script src="./src/js/detail.js"></script>
 </body>
 </html>

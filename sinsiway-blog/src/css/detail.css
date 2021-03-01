@@ -1,0 +1,323 @@
+/* ----------- common ------------ */
+.post-source {
+    font-size: 0.8em;
+    margin-top: 5px;
+    font-weight: normal;
+    display: block;
+}
+
+blockquote {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    font-weight: normal;
+}
+
+
+table, th, td {
+    border: 1px solid #bcbcbc;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* ----------- main ------------ */
+main {
+    width: 75%;
+    padding: 70px 20px 80px;
+    margin:0 auto;
+}
+
+main > .main-inner > section + section {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid lightgrey;
+}
+
+
+/* ----------- post-subject ------------ */
+.post-subject {
+    position: relative;
+}
+
+.post-subject > .section-inner > .subject {
+    font-size: 2.5em;
+    background: linear-gradient(to right, #087CE2, #22BD92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.post-subject > .section-inner > .post-info {
+    margin-top: 20px;
+}
+.post-subject > .section-inner > .post-info > .category {
+    margin-right: 10px;
+}
+
+.post-subject > .section-inner > .post-info > .post-by {
+    font-weight: normal; 
+    font-size: 0.8em;
+}
+
+.post-subject > .section-inner > .post-info > .p-date-info {
+    margin-top:10px;
+    position: absolute;
+    right:10px;
+    bottom: 0;
+}
+
+.post-subject > .section-inner > .post-info > .p-date-info > span {
+    color: #7b7b7b;
+    font-size: 0.8em;
+}
+
+.post-subject > .section-inner > .keyword-hashtag {
+    margin-top: 40px;
+}
+
+.post-subject > .section-inner > .keyword-hashtag > li {
+    padding: 10px 15px 13px;
+    display: inline-block;
+    background-color: #cad2d86e;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+.post-subject > .section-inner > .keyword-hashtag > li + li {
+    margin-left:10px;
+}
+
+/* ----------- post-mainTxt ------------ */
+.post-mainTxt > .section-inner > .main-img > img {
+    width: 100%;
+}
+
+.post-mainTxt > .section-inner > .main-content {
+    margin-top: 30px;
+}
+
+.post-mainTxt > .section-inner > .main-content p {
+    font-weight: normal;
+}
+
+.post-mainTxt > .section-inner > .main-content > b {
+    margin-top: 20px;
+    padding: 10px 0;
+    display: block;
+    font-size: 1.2em;
+}
+
+.post-mainTxt > .section-inner > .main-content > .content-img {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.post-mainTxt > .section-inner > .main-content > .content-img > img {
+    height: 100%;
+}
+
+
+.post-mainTxt > .section-inner > .main-content > .table-area {
+    margin-top: 30px;
+}
+
+.post-mainTxt > .section-inner > .main-content > .table-area > table p {
+    padding:3px 10px;
+}
+
+.post-mainTxt > .section-inner > .main-content > blockquote {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.post-mainTxt > .section-inner > .main-content > .content-qaList {
+    padding-left: 25px;
+}
+
+.post-mainTxt > .section-inner > .main-content > .content-qaList > li {
+    list-style: decimal;
+}
+
+.post-mainTxt > .section-inner > .main-content > .content-qaList > li + li {
+    margin-top:30px;
+}
+
+.post-mainTxt > .section-inner > .main-content > .content-qaList > li > em {
+    margin-top: 10px;
+}
+
+.post-mainTxt > .section-inner > .main-content > .content-qaList > li > blockquote {
+    margin: 20px 0 0 -10px;
+    padding: 20px;
+}
+
+.post-mainTxt > .section-inner > .main-content > .references {
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    padding: 20px 20px 20px 40px;
+    position: relative;
+}
+
+.post-mainTxt > .section-inner > .main-content > .references::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:5px;
+    height: 100%;
+    background-color: #22BD92;
+}
+
+.post-mainTxt > .section-inner > .main-content > .references > span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post-mainTxt > .section-inner > .main-content > .references > p {
+    margin: 5px 0;
+}
+
+.post-mainTxt > .section-inner > .main-content > .writer {
+    text-align: right;
+    margin-top: 50px;
+}
+
+/* ----------- related-post ------------ */
+.related-post > .section-inner {
+    position: relative;
+}
+
+.related-post > .section-inner > .relatedPost-list {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 30px;
+}
+
+.related-post > .section-inner > .relatedPost-list > li > a > .thumb-img > img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.related-post > .section-inner > .relatedPost-list > li:hover > a > .thumb-img > img {
+    transform: scale(1.2);
+}
+
+.related-post > .section-inner > .relatedPost-list > li > a > .thumb-txt {
+    padding: 10px 5px;  
+    margin-top:10px; 
+}
+
+.related-post > .section-inner > .relatedPost-list > li > a > .thumb-txt > .t-title {
+    font-size: 0.8em;
+}
+
+.related-post > .section-inner > .relatedPost-list > li > a > .thumb-txt > .t-date {
+    font-size: 0.7em;
+    color: #848484;
+    font-weight: normal;
+}
+
+.related-post > .section-inner >  .related-more-link {
+    position: absolute;
+    right: 8px;
+    top: -10px;
+    color: #848484;
+    font-size: 0.9em;
+    font-weight: normal;
+    
+}
+
+.related-post > .section-inner >  .related-more-link:hover {
+    background: linear-gradient(to right, #087CE2, #22BD92);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* ----------- comment ------------ */
+.comment .section-inner >  .comment-form {
+    margin-top: 20px;
+    position: relative;
+}
+
+.comment .section-inner >  .comment-form > input {
+    border: 1px solid lightgrey;
+    padding: 10px;   
+    width: 300px;
+    font-weight: normal;
+}
+
+.comment .section-inner >  .comment-form > input + input {
+    margin-left: 10px;
+}
+
+.comment .section-inner >  .comment-form > textarea{
+    display: block;
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    width: 100%;
+}
+.comment .section-inner >  .comment-form > .check-box {
+    margin-top: 20px;
+}
+.comment .section-inner >  .comment-form > .check-box > .check-input[type="checkbox"] {
+    display: none;
+}
+.comment .section-inner >  .comment-form > .check-box > .check-input[type="checkbox"] + label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+    color:  #7b7b7b;
+    font-size:0.9em;
+    cursor: pointer;
+}
+
+.comment .section-inner >  .comment-form > .check-box > .check-input[type="checkbox"] + label > span {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #7b7b7b;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.comment .section-inner >  .comment-form > .check-box > .check-input[type="checkbox"] + label > span > i {
+    color: #3B3B3B;
+    font-size: 1.2em;
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    display: none;
+}
+
+.comment .section-inner >  .comment-form > .check-box.checked  > .check-input[type="checkbox"] + label > span > i {
+    display: block;
+}
+
+.paging-area {
+    display: none;
+}
+
+
+
+.comment .section-inner >  .comment-form > .submit-btn {
+    position: absolute;
+    right: 12px;
+    bottom:-20px;
+    color: #fff;
+    font-weight: normal;
+    background-color: #22BD92;
+    padding:10px 30px 13px;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.comment .section-inner >  .comment-form > .submit-btn:hover {
+    transform: scale(1.12);
+}
