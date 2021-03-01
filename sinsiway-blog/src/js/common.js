@@ -3,7 +3,7 @@ function createHeader() {
     document.querySelector('header').innerHTML = `
     <div class="header-inner">
         <h1 class="main-logo">
-        <a href="../../index.html">
+        <a href="./index.html">
             <img src="./src/images/mainLogo.png" alt="신시웨이 로고">
         </a>
         </h1>
@@ -34,7 +34,7 @@ function createNavmenu() {
     <div class="nav-inner">
         <!-- 네비게이션 헤더 부분 -->
         <div class="nav-header">
-            <a href="../../index.html" class="nav-logo">
+            <a href="./index.html" class="nav-logo">
                 <img src="./src/images/logo.png" alt="신시웨이 로고">
             </a>
             <a class="close-btn">
@@ -46,31 +46,31 @@ function createNavmenu() {
         <nav>
             <ul class="nav-list">
                 <li>
-                    <a href="../../blogPost-list.html">홈</a>
+                    <a href="./blogPost-list.html">홈</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">신시人사이드</a>
+                    <a href="./blogPost-list.html">신시人사이드</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">신시웨이 인사이드</a>
+                    <a href="./blogPost-list.html">신시웨이 인사이드</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">보안 이슈 및 동향</a>
+                    <a href="./blogPost-list.html">보안 이슈 및 동향</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">IT 동향</a>
+                    <a href="./blogPost-list.html">IT 동향</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">IT 일반</a>
+                    <a href="./blogPost-list.html">IT 일반</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">기획 연재</a>
+                    <a href="./blogPost-list.html">기획 연재</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">신시호(The Weekly IT News)</a>
+                    <a href="./blogPost-list.html">신시호(The Weekly IT News)</a>
                 </li>
                 <li>
-                    <a href="../../blogPost-list.html">이벤트</a>
+                    <a href="./blogPost-list.html">이벤트</a>
                 </li>
             </ul>
         </nav>
